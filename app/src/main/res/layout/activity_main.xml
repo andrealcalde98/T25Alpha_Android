@@ -63,13 +63,12 @@
 
     <Button
         android:id="@+id/btnIniciarSesion"
-        android:onClick="btnClickIniciarSesion"
         android:layout_width="121dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="36dp"
         android:background="@color/buttonsMain"
+        android:onClick="btnClickIniciarSesion"
         android:text="Iniciar Sesion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
@@ -77,12 +76,11 @@
     <Button
         android:id="@+id/btnCrearUsuario"
         android:layout_width="125dp"
-        android:onClick="btnCLickCrearUsuari"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginEnd="60dp"
         android:background="@color/buttonsMain"
+        android:onClick="btnCLickCrearUsuari"
         android:text="Crear Usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
@@ -103,9 +101,8 @@
         android:id="@+id/imgT25"
         android:layout_width="237dp"
         android:layout_height="96dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/t25logo" />
