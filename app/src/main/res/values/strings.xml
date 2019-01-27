@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">T25Alpha</string>
     <string name="txtOlvideContrasena"><a href="">Olvidaste tu Contraseña?</a></string>
+    <string name="txt_comentario_restablecer_contrasena">Para poder restablecer la contraseña, tendras que escribir el correo electronico que utilizaste en el login o el numero de telefono</string>
 </resources>
