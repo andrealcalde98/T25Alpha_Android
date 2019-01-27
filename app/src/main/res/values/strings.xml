@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">T25Alpha</string>
+    <string name="txtOlvideContrasena"><a href="">Olvidaste tu Contraseña?</a></string>
 </resources>

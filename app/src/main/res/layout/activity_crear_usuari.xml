@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CrearUsuari"
-    android:background="@android:color/holo_blue_light">
+    android:background="#91e4fb">
 
     <EditText
         android:id="@+id/etContrasena"
         android:layout_width="246dp"
         android:layout_height="39dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         android:background="#FFF"
         android:ems="10"
@@ -34,8 +34,8 @@
         android:id="@+id/etAltura"
         android:layout_width="246dp"
         android:layout_height="38dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="44dp"
         android:background="#FFF"
         android:ems="10"
         android:inputType="textPersonName"
@@ -78,7 +78,7 @@
         android:id="@+id/etSexo"
         android:layout_width="246dp"
         android:layout_height="38dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         android:background="#FFF"
         android:ems="10"
@@ -90,8 +90,8 @@
         android:id="@+id/lblSexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="228dp"
         android:text="Sexo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
