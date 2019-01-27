@@ -40,7 +40,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Username"
+        android:text="Usuario
+"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,14 +54,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
-        android:text="Password"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:text="Contraseña"
+        app:layout_constraintBottom_toTopOf="@+id/eTPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTUsername"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/btnIniciarSesion"
+        android:onClick="btnClickIniciarSesion"
         android:layout_width="121dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -74,6 +77,7 @@
     <Button
         android:id="@+id/btnCrearUsuario"
         android:layout_width="125dp"
+        android:onClick="btnCLickCrearUsuari"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="48dp"
@@ -138,6 +142,7 @@
 
     <ImageView
         android:id="@+id/imgAngles"
+        android:onClick="imgIngles"
         android:layout_width="53dp"
         android:layout_height="35dp"
         android:layout_marginTop="4dp"
