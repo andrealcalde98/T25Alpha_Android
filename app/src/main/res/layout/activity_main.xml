@@ -40,8 +40,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Usuario
-"
+        android:text="Usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,47 +106,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/t25logo" />
 
-    <TextView
-        android:id="@+id/txtIdioma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+    <Button
+        android:id="@+id/btn_english"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:text="Idioma"
-        app:layout_constraintBottom_toTopOf="@+id/imgT25"
+        android:background="@drawable/flaguk"
+        android:onClick="changeLocale"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imgCastella"
-        android:layout_width="55dp"
-        android:layout_height="31dp"
+    <Button
+        android:id="@+id/btn_spanish"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toEndOf="@+id/txtIdioma"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/flagspain" />
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/flagspain"
+        app:layout_constraintEnd_toStartOf="@+id/btn_catalan"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imgCatala"
-        android:layout_width="52dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toEndOf="@+id/imgCastella"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/flagcat" />
-
-    <ImageView
-        android:id="@+id/imgAngles"
-        android:onClick="imgIngles"
-        android:layout_width="53dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/flaguk" />
+    <Button
+        android:id="@+id/btn_catalan"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/flagcat"
+        app:layout_constraintEnd_toStartOf="@+id/btn_english"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
