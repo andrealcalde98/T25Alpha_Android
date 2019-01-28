@@ -2,14 +2,17 @@ package com.example.t25alpha;
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -17,7 +20,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btnUsuario;
     private Button btnIniSesion;
     private TextView olvidarPass;
-    private ImageView txtAngles;
+    private Button btnEnglish;
+    private Button btnCatalan;
+    private Button btnSpanish;
+    private String str;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +32,26 @@ public class MainActivity extends AppCompatActivity {
         btnUsuario = (Button) findViewById(R.id.btnCrearUsuario);
         btnIniSesion = (Button) findViewById(R.id.btnIniciarSesion);
         olvidarPass = (TextView) findViewById(R.id.txtOlvidarCuenta);
-        txtAngles = (ImageView) findViewById(R.id.imgAngles);
+        btnCatalan = (Button) findViewById(R.id.btn_catalan);
+        btnSpanish = (Button) findViewById(R.id.btn_spanish);
+        btnEnglish = (Button) findViewById(R.id.btn_english);
+            }
+
+
+    public void changeLocale(View view) {
+        Resources res = getResources();
+        // Change locale settings in the app.
+        DisplayMetrics dm = res.getDisplayMetrics();
+        android.content.res.Configuration conf = res.getConfiguration();
+        conf.locale = new Locale("en_EN");
+        res.updateConfiguration(conf, dm);
+
+        setContentView(R.layout.activity_main);
     }
 
     public void btnClickIniciarSesion(View view) {
+        Intent intent = new Intent(view.getContext(), menuPrincipal.class);
+        startActivity(intent);
     }
 
     public void btnCLickCrearUsuari(View view) {
@@ -37,18 +59,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void imgIngles(View view) {
-       /* Intent intent = new Intent(String.valueOf(Locale.ENGLISH));
-        startActivity(intent);
-        Locale locale = new Locale("en_EN");
-        Locale.setDefault(locale);
-        Configuration config = new Configuration();
-        config.locale = locale;
-        txtAngles.getResources().updateConfiguration(config, null);*/
-    }
-
     public void linkOlvidePass(View view) {
         Intent intent = new Intent(view.getContext(), RestablecerContrasena.class);
         startActivity(intent);
     }
+
+
 }
+
