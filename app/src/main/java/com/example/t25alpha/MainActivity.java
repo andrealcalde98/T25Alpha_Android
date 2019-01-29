@@ -39,9 +39,6 @@ public class MainActivity extends AppCompatActivity {
         olvidarPass = (TextView) findViewById(R.id.txtOlvidarCuenta);
         etUsuario = findViewById(R.id.eTUsername);
         etPassword = findViewById(R.id.etContrasena);
-        // btnCatalan = (Button) findViewById(R.id.btn_catalan);
-        // btnSpanish = (Button) findViewById(R.id.btn_spanish);
-        // btnEnglish = (Button) findViewById(R.id.btn_english);
 
 
         findViewById(R.id.btn_english).setOnClickListener(new View.OnClickListener() {
@@ -77,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public void changeLang(Context context, String lang) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = preferences.edit();
@@ -96,8 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnClickIniciarSesion(View view) {
         if(etUsuario.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()){
-            Toast.makeText(MainActivity.this,"Tienes que escribir datos",Toast.LENGTH_SHORT).show();
-        }
+            Toast.makeText(this,"Escribe tus datos",Toast.LENGTH_SHORT).show();}
         else {
             Intent intent = new Intent(view.getContext(), menuPrincipal.class);
             startActivity(intent);
