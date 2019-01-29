@@ -21,6 +21,7 @@
         android:id="@+id/imageView"
         android:layout_width="101dp"
         android:layout_height="56dp"
+        android:contentDescription="@string/T25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/t25logo" />
@@ -30,9 +31,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Restablecer Contraseña"
+        android:text="@string/restablecer_contraseña"
         android:textAlignment="center"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -44,7 +45,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="GiveYouGlory.ttf"
         android:text="@string/txt_comentario_restablecer_contrasena"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
@@ -67,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
-        android:text="Correo electronico"
+        android:text="@string/correo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtComentario" />
 
@@ -78,7 +79,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:background="#0844a4"
-        android:text="Buscar"
+        android:text="@string/buscar"
         android:textColor="#FFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTrestablecerContra" />

@@ -10,4 +10,12 @@
     <string name="crear">Create User</string>
     <string name="usuario">User</string>
     <string name="contra">Password</string>
+    <string name="nya">Name and Surname</string>
+    <string name="correo">Mail</string>
+    <string name="sexo">Sex</string>
+    <string name="edad">Age</string>
+    <string name="altura">Height</string>
+    <string name="titulo_crear">Create your User</string>
+    <string name="restablecer_contraseña">Reset Password</string>
+    <string name="buscar">Search</string>
 </resources>
