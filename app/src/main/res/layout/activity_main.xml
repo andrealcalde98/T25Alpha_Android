@@ -113,7 +113,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/flaguk"
-        android:onClick="changeEnglish"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,7 +124,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/flagspain"
-        android:onClick="changeSpanish"
         app:layout_constraintEnd_toStartOf="@+id/btn_catalan"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -138,7 +136,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/flagcat"
-        android:onClick="changeCatalan"
         app:layout_constraintEnd_toStartOf="@+id/btn_english"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -1,10 +1,13 @@
 package com.example.t25alpha;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.media.Image;
 import android.os.LocaleList;
+import android.preference.PreferenceManager;
 import android.support.v4.os.LocaleListCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnEnglish;
     private Button btnCatalan;
     private Button btnSpanish;
-    private String str;
+    private String LANG_CURRENT = "en";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,42 +37,60 @@ public class MainActivity extends AppCompatActivity {
         btnUsuario = (Button) findViewById(R.id.btnCrearUsuario);
         btnIniSesion = (Button) findViewById(R.id.btnIniciarSesion);
         olvidarPass = (TextView) findViewById(R.id.txtOlvidarCuenta);
-        btnCatalan = (Button) findViewById(R.id.btn_catalan);
-        btnSpanish = (Button) findViewById(R.id.btn_spanish);
-        btnEnglish = (Button) findViewById(R.id.btn_english);
+        // btnCatalan = (Button) findViewById(R.id.btn_catalan);
+        // btnSpanish = (Button) findViewById(R.id.btn_spanish);
+        // btnEnglish = (Button) findViewById(R.id.btn_english);
+
+
+        findViewById(R.id.btn_english).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (LANG_CURRENT.equals("es") || LANG_CURRENT.equals("ca") ) {
+                    changeLang(MainActivity.this, "en");
+                }
+                finish();
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
+        });
 
+        findViewById(R.id.btn_catalan).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (LANG_CURRENT.equals("es") || LANG_CURRENT.equals("en")) {
+                    changeLang(MainActivity.this, "ca");
+                }
+                finish();
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
+            }
+        });
 
-    public void changeEnglish(View view) {
-        Resources res = getResources();
-        // Change locale settings in the app.
-        DisplayMetrics dm = res.getDisplayMetrics();
-        android.content.res.Configuration conf = res.getConfiguration();
-        conf.locale = new Locale("en", "EN");
-        res.updateConfiguration(conf, dm);
-
-        setContentView(R.layout.activity_main);
+        findViewById(R.id.btn_spanish).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (LANG_CURRENT.equals("en") || LANG_CURRENT.equals("ca")) {
+                    changeLang(MainActivity.this, "es");
+                }
+                finish();
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
+            }
+        });
     }
-    public void changeCatalan(View view) {
-        Resources res = getResources();
-        // Change locale settings in the app.
-        DisplayMetrics dm = res.getDisplayMetrics();
-        android.content.res.Configuration conf = res.getConfiguration();
-        conf.locale = new Locale("ca","ES");
-        res.updateConfiguration(conf, dm);
-
-        setContentView(R.layout.activity_main);
+    public void changeLang(Context context, String lang) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("Language", lang);
+        editor.apply();
     }
-    public void changeSpanish(View view) {
-        Resources res = getResources();
-        // Change locale settings in the app.
-        DisplayMetrics dm = res.getDisplayMetrics();
-        android.content.res.Configuration conf = res.getConfiguration();
-        conf.locale = Locale.getDefault();
-        res.updateConfiguration(conf, dm);
 
-        setContentView(R.layout.activity_main);
+    @Override
+    protected void attachBaseContext(Context newBase) {
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(newBase);
+        LANG_CURRENT = preferences.getString("Language", "en");
+
+        super.attachBaseContext(MyContextWrapper.wrap(newBase, LANG_CURRENT));
     }
+
 
     public void btnClickIniciarSesion(View view) {
         Intent intent = new Intent(view.getContext(), menuPrincipal.class);
