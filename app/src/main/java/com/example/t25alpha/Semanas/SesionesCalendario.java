@@ -14,8 +14,5 @@ RecyclerView rv;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sesiones_calendario);
         rv = findViewById(R.id.rvSesiones);
-        rv.setHasFixedSize(true);
-        LinearLayoutManager llm = new LinearLayoutManager(getBaseContext());
-        rv.setLayoutManager(llm);
     }
 }
