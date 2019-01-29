@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.media.Image;
+import android.os.LocaleList;
+import android.support.v4.os.LocaleListCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
@@ -38,12 +40,32 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-    public void changeLocale(View view) {
+    public void changeEnglish(View view) {
         Resources res = getResources();
         // Change locale settings in the app.
         DisplayMetrics dm = res.getDisplayMetrics();
         android.content.res.Configuration conf = res.getConfiguration();
-        conf.locale = new Locale("en_EN");
+        conf.locale = new Locale("en", "EN");
+        res.updateConfiguration(conf, dm);
+
+        setContentView(R.layout.activity_main);
+    }
+    public void changeCatalan(View view) {
+        Resources res = getResources();
+        // Change locale settings in the app.
+        DisplayMetrics dm = res.getDisplayMetrics();
+        android.content.res.Configuration conf = res.getConfiguration();
+        conf.locale = new Locale("ca","ES");
+        res.updateConfiguration(conf, dm);
+
+        setContentView(R.layout.activity_main);
+    }
+    public void changeSpanish(View view) {
+        Resources res = getResources();
+        // Change locale settings in the app.
+        DisplayMetrics dm = res.getDisplayMetrics();
+        android.content.res.Configuration conf = res.getConfiguration();
+        conf.locale = Locale.getDefault();
         res.updateConfiguration(conf, dm);
 
         setContentView(R.layout.activity_main);

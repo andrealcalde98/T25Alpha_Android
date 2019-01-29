@@ -1,10 +1,14 @@
 <resources>
-    <string name="app_name">T25Alpha</string>
-    <string name="txtOlvideContrasena"><a href="">Olvidaste tu Contraseña?</a></string>
-    <string name="txt_comentario_restablecer_contrasena">Para poder restablecer la contraseña, tendras que escribir el correo electronico que utilizaste en el login o el numero de telefono</string>
-    <string name="staturday">Staturday</string>
-    <string name="videos">Videos</string>
-    <string name="grafica">Grafica</string>
+    <string name="app_name" translatable="false">T25Alpha</string>
+    <string name="txtOlvideContrasena">Has olvidado tu contraseña</string>
+    <string name="txt_comentario_restablecer_contrasena">Usa tu numero de telefon o email para reestablecer contraseña</string>
+    <string name="staturday" translatable="false">Staturday</string>
+    <string name="videos">Video</string>
+    <string name="grafica">Graficos</string>
     <string name="calendario">Calendario</string>
     <string name="perfil">Perfil</string>
+    <string name="iniciar">Iniciar Sesion</string>
+    <string name="crear">Crear Usuario</string>
+    <string name="usuario">Usuario</string>
+    <string name="contra">Contraseña</string>
 </resources>

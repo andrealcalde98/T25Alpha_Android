@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">T25Alpha</string>
     <string name="txtOlvideContrasena">Has oblidat la teva contrasenya?</string>
-    <string name="txt_comentario_restablecer_contrasena">Per reestablir la contrasenya utiliza el teu numero de telefon o email</string>
-    <string name="staturday">Staturday</string>
-    <string name="videos">Videos</string>
+    <string name="txt_comentario_restablecer_contrasena">Per reestablir contrasenya fes servir el numero de telfon o email</string>
+    <string name="videos">Video</string>
     <string name="grafica">Grafica</string>
     <string name="calendario">Calendari</string>
     <string name="perfil">Perfil</string>
+    <string name="iniciar">Inicia Sesio</string>
+    <string name="crear">Crea Usuari</string>
+    <string name="usuario">Usuari</string>
+    <string name="contra">Contrasenya</string>
 </resources>

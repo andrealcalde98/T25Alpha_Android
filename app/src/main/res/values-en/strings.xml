@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">T25Alpha</string>
-    <string name="txtOlvideContrasena">Forgot password?</string>
-    <string name="txt_comentario_restablecer_contrasena">Use your phone number or your email to reset your password</string>
-    <string name="staturday">Staturday</string>
-    <string name="videos">Videos</string>
-    <string name="grafica">Graphics</string>
+    <string name="txtOlvideContrasena">Forgot?</string>
+    <string name="txt_comentario_restablecer_contrasena">Use phone or email to reset</string>
+    <string name="videos">Video</string>
+    <string name="grafica">Graphic</string>
     <string name="calendario">Calendar</string>
     <string name="perfil">Profile</string>
+    <string name="iniciar">Log in</string>
+    <string name="crear">Create User</string>
+    <string name="usuario">User</string>
+    <string name="contra">Password</string>
 </resources>
