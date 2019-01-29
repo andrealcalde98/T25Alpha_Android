@@ -15,6 +15,7 @@ import android.text.method.LinkMovementMethod;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnCatalan;
     private Button btnSpanish;
     private String LANG_CURRENT = "en";
+    private EditText etUsuario;
+    private EditText etPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         btnUsuario = (Button) findViewById(R.id.btnCrearUsuario);
         btnIniSesion = (Button) findViewById(R.id.btnIniciarSesion);
         olvidarPass = (TextView) findViewById(R.id.txtOlvidarCuenta);
+        etUsuario = findViewById(R.id.eTUsername);
+        etPassword = findViewById(R.id.etContrasena);
         // btnCatalan = (Button) findViewById(R.id.btn_catalan);
         // btnSpanish = (Button) findViewById(R.id.btn_spanish);
         // btnEnglish = (Button) findViewById(R.id.btn_english);
@@ -93,8 +98,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnClickIniciarSesion(View view) {
-        Intent intent = new Intent(view.getContext(), menuPrincipal.class);
-        startActivity(intent);
+        if(etUsuario.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()){
+            Toast.makeText(MainActivity.this,"Tienes que escribir datos",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Intent intent = new Intent(view.getContext(), menuPrincipal.class);
+            startActivity(intent);
+        }
     }
 
     public void btnCLickCrearUsuari(View view) {

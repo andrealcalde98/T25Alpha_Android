@@ -63,6 +63,7 @@
         android:drawableBottom="@drawable/ic_hombrepesas"
         android:text="@string/calendario"
         android:visibility="visible"
+        android:onClick="onClickCalendari"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
