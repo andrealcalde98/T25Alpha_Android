@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnClickIniciarSesion(View view) {
         if(etUsuario.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()){
-            Toast.makeText(this,"Escribe tus datos",Toast.LENGTH_SHORT).show();}
+            Toast.makeText(this,"Escribe algo mas",Toast.LENGTH_SHORT).show();}
         else {
             Intent intent = new Intent(view.getContext(), menuPrincipal.class);
             startActivity(intent);
