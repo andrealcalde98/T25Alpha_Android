@@ -10,4 +10,12 @@
     <string name="crear">Crear Usuario</string>
     <string name="usuario">Usuario</string>
     <string name="contra">Contraseña</string>
+    <string name="nya">Nombre y Apellido</string>
+    <string name="correo">Correo</string>
+    <string name="sexo">Sexo</string>
+    <string name="edad">Edad</string>
+    <string name="altura">Altura</string>
+    <string name="titulo_crear">Crea tu propio Usuario</string>
+    <string name="restablecer_contraseña">Restablecer Contraseña</string>
+    <string name="buscar">Buscar</string>
 </resources>

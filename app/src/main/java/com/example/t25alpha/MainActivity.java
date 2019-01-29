@@ -38,10 +38,8 @@ public class MainActivity extends AppCompatActivity {
         btnIniSesion = (Button) findViewById(R.id.btnIniciarSesion);
         olvidarPass = (TextView) findViewById(R.id.txtOlvidarCuenta);
         etUsuario = findViewById(R.id.eTUsername);
-        etPassword = findViewById(R.id.etContrasena);
-        // btnCatalan = (Button) findViewById(R.id.btn_catalan);
-        // btnSpanish = (Button) findViewById(R.id.btn_spanish);
-        // btnEnglish = (Button) findViewById(R.id.btn_english);
+        etPassword = findViewById(R.id.eTPassword);
+
 
 
         findViewById(R.id.btn_english).setOnClickListener(new View.OnClickListener() {

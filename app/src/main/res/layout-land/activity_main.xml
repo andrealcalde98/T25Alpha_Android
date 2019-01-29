@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#91e4fb"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/eTUsername"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints=""
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgT25" />
+
+    <EditText
+        android:id="@+id/eTPassword"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTUsername" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgT25" />
+
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/contra"
+        app:layout_constraintBottom_toTopOf="@+id/eTPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTUsername"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/buttonsMain"
+        android:onClick="btnClickIniciarSesion"
+        android:text="@string/iniciar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
+
+    <Button
+        android:id="@+id/btnCrearUsuario"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="216dp"
+        android:background="@color/buttonsMain"
+        android:onClick="btnCLickCrearUsuari"
+        android:text="@string/crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
+
+    <TextView
+        android:id="@+id/txtOlvidarCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/txtOlvideContrasena"
+        android:autoLink="all"
+        android:onClick="linkOlvidePass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+
+    <ImageView
+        android:id="@+id/imgT25"
+        android:layout_width="237dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/T25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/t25logo" />
+
+    <Button
+        android:id="@+id/btn_english"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/flaguk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_spanish"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/flagspain"
+        app:layout_constraintEnd_toStartOf="@+id/btn_catalan"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_catalan"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/flagcat"
+        app:layout_constraintEnd_toStartOf="@+id/btn_english"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
