@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".menuPrincipal"></activity>
+        <activity android:name=".Semanas.SesionesCalendario"></activity>
+        <activity android:name=".menuPrincipal" />
         <activity android:name=".RestablecerContrasena" />
         <activity android:name=".CrearUsuari" />
         <activity android:name=".MainActivity">
