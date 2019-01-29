@@ -26,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
     private Button btnUsuario;
     private Button btnIniSesion;
     private TextView olvidarPass;
-    private Button btnEnglish;
-    private Button btnCatalan;
-    private Button btnSpanish;
     private String LANG_CURRENT = "en";
     private EditText etUsuario;
     private EditText etPassword;
