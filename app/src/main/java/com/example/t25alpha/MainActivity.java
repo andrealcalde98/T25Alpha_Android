@@ -23,9 +23,6 @@ import android.widget.Toast;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnUsuario;
-    private Button btnIniSesion;
-    private TextView olvidarPass;
     private String LANG_CURRENT = "en";
     private EditText etUsuario;
     private EditText etPassword;
@@ -34,15 +31,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnUsuario = (Button) findViewById(R.id.btnCrearUsuario);
-        btnIniSesion = (Button) findViewById(R.id.btnIniciarSesion);
-        olvidarPass = (TextView) findViewById(R.id.txtOlvidarCuenta);
-        etUsuario = findViewById(R.id.eTUsername);
-        etPassword = findViewById(R.id.etContrasena);
-        // btnCatalan = (Button) findViewById(R.id.btn_catalan);
-        // btnSpanish = (Button) findViewById(R.id.btn_spanish);
-        // btnEnglish = (Button) findViewById(R.id.btn_english);
-
+        etUsuario =(EditText) findViewById(R.id.eTUsername);
+        etPassword = (EditText) findViewById(R.id.eTPassword);
 
         findViewById(R.id.btn_english).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,14 +85,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnClickIniciarSesion(View view) {
-        if(etUsuario.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()){
-            Toast.makeText(MainActivity.this,"Tienes que escribir datos",Toast.LENGTH_SHORT).show();
+        if((etUsuario.getText().toString().isEmpty()) || (etPassword.getText().toString().isEmpty())){
+            Toast.makeText(MainActivity.this,"Tienes que insertar datos!!",Toast.LENGTH_SHORT).show();
         }
         else {
             Intent intent = new Intent(view.getContext(), menuPrincipal.class);
             startActivity(intent);
         }
-    }
+        }
 
     public void btnCLickCrearUsuari(View view) {
         Intent intent = new Intent(view.getContext(), CrearUsuari.class);
