@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Semanas.SesionesCalendario"></activity>
         <activity android:name=".menuPrincipal" />
         <activity android:name=".RestablecerContrasena" />
         <activity android:name=".CrearUsuari" />
+        <activity android:name=".Main_semanas" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

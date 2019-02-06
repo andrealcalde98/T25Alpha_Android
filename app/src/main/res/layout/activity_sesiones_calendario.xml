@@ -4,15 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Semanas.SesionesCalendario"
+    tools:context=".Main_semanas"
     android:background="#d6d6d6">
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="395dp"
         android:layout_height="715dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:id="@+id/rvSesiones"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:id="@+id/rvSesiones"/>
     </LinearLayout>

@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.t25alpha.Semanas.SesionesCalendario;
-
 public class menuPrincipal extends AppCompatActivity {
 
     @Override
@@ -16,7 +14,7 @@ public class menuPrincipal extends AppCompatActivity {
     }
 
     public void onClickCalendari(View view) {
-        Intent intent = new Intent(view.getContext(), SesionesCalendario.class);
+        Intent intent = new Intent(view.getContext(), Main_semanas.class);
         startActivity(intent);
     }
 }
