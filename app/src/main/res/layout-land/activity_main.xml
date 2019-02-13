@@ -11,7 +11,8 @@
         android:id="@+id/eTUsername"
         android:layout_width="292dp"
         android:layout_height="40dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="40dp"
         android:autofillHints=""
         android:background="@android:color/white"
         android:ems="10"
@@ -19,94 +20,74 @@
         android:maxLength="20"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgT25" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/eTPassword"
-        android:layout_width="290dp"
+        android:layout_width="292dp"
         android:layout_height="40dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="184dp"
         android:background="@android:color/white"
         android:ems="10"
         android:inputType="textPassword"
         android:maxLength="20"
         android:maxLines="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eTUsername" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtUsername"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="284dp"
         android:text="@string/usuario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.326"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgT25" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="260dp"
         android:text="@string/contra"
-        app:layout_constraintBottom_toTopOf="@+id/eTPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eTUsername"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTUsername" />
 
     <Button
         android:id="@+id/btnIniciarSesion"
-        android:layout_width="121dp"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="52dp"
         android:background="@color/buttonsMain"
         android:onClick="btnClickIniciarSesion"
         android:text="@string/iniciar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCrearUsuario" />
 
     <Button
         android:id="@+id/btnCrearUsuario"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="216dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="52dp"
         android:background="@color/buttonsMain"
         android:onClick="btnCLickCrearUsuari"
         android:text="@string/crear"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
-
-    <TextView
-        android:id="@+id/txtOlvidarCuenta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/txtOlvideContrasena"
-        android:autoLink="all"
-        android:onClick="linkOlvidePass"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imgT25"
         android:layout_width="237dp"
         android:layout_height="96dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="104dp"
         android:contentDescription="@string/T25"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/t25logo" />
@@ -115,33 +96,42 @@
         android:id="@+id/btn_english"
         android:layout_width="59dp"
         android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/flaguk"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_catalan" />
 
     <Button
         android:id="@+id/btn_spanish"
         android:layout_width="59dp"
         android:layout_height="33dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/flagspain"
-        app:layout_constraintEnd_toStartOf="@+id/btn_catalan"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_catalan"
         android:layout_width="59dp"
         android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/flagcat"
-        app:layout_constraintEnd_toStartOf="@+id/btn_english"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_spanish" />
+
+    <TextView
+        android:id="@+id/txtOlvidarCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="156dp"
+        android:autoLink="all"
+        android:onClick="linkOlvidePass"
+        android:text="@string/txtOlvideContrasena"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
