@@ -96,13 +96,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnRegistrarUsuari2"
+        android:id="@+id/btnEdita"
         android:layout_width="133dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="98dp"
         android:layout_marginBottom="54dp"
         android:background="#72bb53"
-        android:text="@string/crear"
+        android:text="@string/edita"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

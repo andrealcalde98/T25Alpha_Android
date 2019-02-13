@@ -77,6 +77,7 @@
         android:layout_marginBottom="24dp"
         android:background="#f4eb49"
         android:drawableBottom="@drawable/ic_perfilpersona"
+        android:onClick="onClickPerfil"
         android:text="@string/perfil"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="@+id/button3"

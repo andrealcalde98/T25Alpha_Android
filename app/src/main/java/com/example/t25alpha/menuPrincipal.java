@@ -17,4 +17,9 @@ public class menuPrincipal extends AppCompatActivity {
         Intent intent = new Intent(view.getContext(), Main_semanas.class);
         startActivity(intent);
     }
+
+    public void onClickPerfil(View view) {
+        Intent intent = new Intent(view.getContext(), PerfilActivity.class);
+        startActivity(intent);
+    }
 }
