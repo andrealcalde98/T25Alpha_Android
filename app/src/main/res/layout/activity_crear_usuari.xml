@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrearUsuari"
-    android:background="#91e4fb">
+    android:background="#91e4fb"
+    tools:context=".CrearUsuari">
 
     <EditText
         android:id="@+id/etContrasena"

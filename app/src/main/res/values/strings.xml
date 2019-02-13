@@ -20,5 +20,6 @@
     <string name="titulo_crear">Crea tu propio Usuario</string>
     <string name="restablecer_contraseña">Restablecer Contraseña</string>
     <string name="buscar">Buscar</string>
+    <string name="semana">Semana</string>
 
 </resources>

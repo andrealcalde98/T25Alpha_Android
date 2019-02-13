@@ -18,4 +18,5 @@
     <string name="titulo_crear">Crea el teu Usuari</string>
     <string name="restablecer_contraseña">Restablir Contrasenya</string>
     <string name="buscar">Cerca</string>
+    <string name="semana">Setmana</string>
 </resources>
