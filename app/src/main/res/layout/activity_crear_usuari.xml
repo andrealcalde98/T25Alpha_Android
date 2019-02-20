@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#91e4fb"
+    android:background="@color/cardview_light_background"
     tools:context=".CrearUsuari">
 
     <EditText
@@ -12,107 +12,62 @@
         android:layout_width="246dp"
         android:layout_height="39dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/contra"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAltura" />
-
-    <TextView
-        android:id="@+id/lblContraseña"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="468dp"
-        android:text="@string/contra"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etAltura"
         android:layout_width="246dp"
         android:layout_height="38dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/altura"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEdad" />
-
-    <TextView
-        android:id="@+id/lblAltura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="388dp"
-        android:text="@string/altura"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etEdad"
         android:layout_width="246dp"
         android:layout_height="38dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/edad"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etSexo" />
-
-    <TextView
-        android:id="@+id/lblEdad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/edad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblSexo" />
 
     <EditText
         android:id="@+id/etSexo"
         android:layout_width="246dp"
         android:layout_height="38dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/sexo"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
-
-    <TextView
-        android:id="@+id/lblSexo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="228dp"
-        android:text="@string/sexo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/lblCorreu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="148dp"
-        android:text="@string/correo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etCorreo"
         android:layout_width="246dp"
         android:layout_height="38dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/correo"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNombreApellidos" />
@@ -120,11 +75,11 @@
     <TextView
         android:id="@+id/lblTitulo"
         android:layout_width="318dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
         android:text="@string/titulo_crear"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/titulo_crear" />
@@ -134,20 +89,11 @@
         android:layout_width="246dp"
         android:layout_height="38dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="124dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/nya"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/lblNombreApellidos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="68dp"
-        android:text="@string/nya"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -155,13 +101,13 @@
         android:id="@+id/btnRegistrarUsuari"
         android:layout_width="133dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
-        android:background="#72bb53"
+        android:background="@drawable/redondeado"
         android:text="@string/crear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etContrasena"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.456" />
 </android.support.constraint.ConstraintLayout>

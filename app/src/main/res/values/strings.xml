@@ -1,26 +1,26 @@
 <resources>
     <string name="app_name" translatable="false">T25Alpha</string>
-    <string name="txtOlvideContrasena">Has olvidado tu contraseña</string>
-    <string name="txt_comentario_restablecer_contrasena">Usa tu numero de telefon o email para reestablecer contraseña</string>
+    <string name="txtOlvideContrasena">Has oblidat la teva contrasenya?</string>
+    <string name="txt_comentario_restablecer_contrasena">Per restablir contrasenya fes servir el numero de telfon o email</string>
     <string name="staturday" translatable="false">Staturday</string>
-    <string name="videos">Video</string>
-    <string name="grafica">Graficos</string>
-    <string name="calendario">Calendario</string>
+    <string name="videos">Vídeo</string>
+    <string name="grafica">Grafics</string>
+    <string name="calendario">Calendari</string>
     <string name="perfil">Perfil</string>
-    <string name="iniciar">Iniciar Sesion</string>
-    <string name="crear">Crear Usuario</string>
-    <string name="usuario">Usuario</string>
-    <string name="contra">Contraseña</string>
+    <string name="iniciar">Inicia Sessió</string>
+    <string name="crear">Crea Usuari</string>
+    <string name="usuario">Usuari</string>
+    <string name="contra">Contrasenya</string>
     <string name="T25" translatable="false">image_project</string>
-    <string name="nya">Nombre y Apellido</string>
-    <string name="correo">Correo</string>
-    <string name="sexo">Sexo</string>
-    <string name="edad">Edad</string>
+    <string name="nya">Nom i cognoms</string>
+    <string name="correo">Correu</string>
+    <string name="sexo">Sexe</string>
+    <string name="edad">Edat</string>
     <string name="altura">Altura</string>
-    <string name="titulo_crear">Crea tu propio Usuario</string>
-    <string name="restablecer_contraseña">Restablecer Contraseña</string>
-    <string name="buscar">Buscar</string>
-    <string name="semana">Semana</string>
-    <string name="edita">Editar</string>
+    <string name="titulo_crear">Creat el teu Usuari</string>
+    <string name="restablecer_contraseña">Restablir Contrasenya</string>
+    <string name="buscar">Cerca</string>
+    <string name="semana">Setmana</string>
+    <string name="edita">Edita</string>
 
 </resources>
