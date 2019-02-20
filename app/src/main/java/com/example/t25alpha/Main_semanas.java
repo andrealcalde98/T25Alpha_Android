@@ -41,7 +41,6 @@ public class Main_semanas extends AppCompatActivity {
         items.add(new Semanas("Semana 5", R.drawable.ic_hombrepesas));
         items.add(new Semanas("Semana 6", R.drawable.ic_hombrepesas));
         items.add(new Semanas("Semana 7", R.drawable.ic_hombrepesas));
-
         return items;
 
 }

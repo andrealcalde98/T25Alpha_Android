@@ -53,13 +53,15 @@ public class adaptadorSemanas extends RecyclerView.Adapter<adaptadorSemanas.View
         TextView tvNombre;
 
 
-        public ViewHolderDatos(View itemView) {
+        public ViewHolderDatos(final View itemView) {
             super(itemView);
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent= new Intent(context, menuPrincipal.class);
-                    context.startActivity(intent);
+                        Intent intent = new Intent(context, menuPrincipal.class);
+                        context.startActivity(intent);
+
                 }
             });
             imgSemanas = (ImageView) itemView.findViewById(R.id.imgSemana);
