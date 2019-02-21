@@ -2,11 +2,11 @@
 <resources>
     <string name="txtOlvideContrasena">Has oblidat la teva contrasenya?</string>
     <string name="txt_comentario_restablecer_contrasena">Per restablir contrasenya fes servir el numero de telfon o email</string>
-    <string name="videos">Video</string>
+    <string name="videos">Vídeo</string>
     <string name="grafica">Grafica</string>
     <string name="calendario">Calendari</string>
     <string name="perfil">Perfil</string>
-    <string name="iniciar">Inicia Sesio</string>
+    <string name="iniciar">Inicia Sessió</string>
     <string name="crear">Crea Usuari</string>
     <string name="usuario">Usuari</string>
     <string name="contra">Contrasenya</string>
@@ -18,4 +18,6 @@
     <string name="titulo_crear">Crea el teu Usuari</string>
     <string name="restablecer_contraseña">Restablir Contrasenya</string>
     <string name="buscar">Cerca</string>
+    <string name="semana">Setmana</string>
+    <string name="edita">Edita</string>
 </resources>
