@@ -34,13 +34,13 @@ public class Main_semanas extends AppCompatActivity {
 
     private ArrayList<Semanas>dataSet(){
         ArrayList<Semanas> items = new ArrayList<>();
-        items.add(new Semanas("Semana 1", R.drawable.ic_hombrepesas));
-        items.add(new Semanas("Semana 2", R.drawable.ic_hombrepesas));
-        items.add(new Semanas("Semana 3", R.drawable.ic_hombrepesas));
-        items.add(new Semanas("Semana 4", R.drawable.ic_hombrepesas));
-        items.add(new Semanas("Semana 5", R.drawable.ic_hombrepesas));
-        items.add(new Semanas("Semana 6", R.drawable.ic_hombrepesas));
-        items.add(new Semanas("Semana 7", R.drawable.ic_hombrepesas));
+        items.add(new Semanas("Semana 1", R.drawable.pesas));
+        items.add(new Semanas("Semana 2", R.drawable.pesas));
+        items.add(new Semanas("Semana 3", R.drawable.pesas));
+        items.add(new Semanas("Semana 4", R.drawable.pesas));
+        items.add(new Semanas("Semana 5", R.drawable.pesas));
+        items.add(new Semanas("Semana 6", R.drawable.pesas));
+        items.add(new Semanas("Semana 7", R.drawable.pesas));
         return items;
 
 }
