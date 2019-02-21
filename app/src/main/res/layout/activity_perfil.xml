@@ -12,20 +12,20 @@
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="40dp"
         android:background="#FFF"
         android:ems="10"
         android:hint="@string/edad"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/etSexo2" />
 
     <EditText
         android:id="@+id/etNombreApellidos2"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="128dp"
         android:background="#FFF"
         android:ems="10"
         android:hint="@string/nya"
@@ -38,19 +38,19 @@
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="201dp"
+        android:layout_marginTop="40dp"
         android:background="#FFF"
         android:ems="10"
         android:hint="@string/correo"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombreApellidos2" />
 
     <Button
         android:id="@+id/btnEdita"
         android:layout_width="133dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="68dp"
         android:background="@drawable/redondeado"
@@ -58,46 +58,46 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etContrasena2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.708" />
 
     <EditText
         android:id="@+id/etSexo2"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="282dp"
+        android:layout_marginTop="40dp"
         android:background="#FFF"
         android:ems="10"
         android:hint="@string/sexo"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo2" />
 
     <EditText
         android:id="@+id/etContrasena2"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="531dp"
+        android:layout_marginTop="40dp"
         android:background="#FFF"
         android:ems="10"
         android:hint="@string/contra"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/etAltura2" />
 
     <EditText
         android:id="@+id/etAltura2"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="446dp"
+        android:layout_marginTop="40dp"
         android:background="#FFF"
         android:ems="10"
         android:hint="@string/altura"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/etEdad2" />
 
     <TextView
         android:id="@+id/textView"
