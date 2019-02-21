@@ -10,7 +10,7 @@
     <EditText
         android:id="@+id/etContrasena"
         android:layout_width="246dp"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="44dp"
         android:background="#FFF"
@@ -23,7 +23,7 @@
     <EditText
         android:id="@+id/etAltura"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="36dp"
         android:background="#FFF"
@@ -36,7 +36,7 @@
     <EditText
         android:id="@+id/etEdad"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="44dp"
         android:background="#FFF"
@@ -49,7 +49,7 @@
     <EditText
         android:id="@+id/etSexo"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="36dp"
         android:background="#FFF"
@@ -62,7 +62,7 @@
     <EditText
         android:id="@+id/etCorreo"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="44dp"
         android:background="#FFF"
@@ -74,8 +74,8 @@
 
     <TextView
         android:id="@+id/lblTitulo"
-        android:layout_width="318dp"
-        android:layout_height="47dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         android:text="@string/titulo_crear"
@@ -87,7 +87,7 @@
     <EditText
         android:id="@+id/etNombreApellidos"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="124dp"
         android:background="#FFF"
@@ -109,5 +109,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etContrasena"
-        app:layout_constraintVertical_bias="0.456" />
+        app:layout_constraintVertical_bias="0.344" />
 </android.support.constraint.ConstraintLayout>
