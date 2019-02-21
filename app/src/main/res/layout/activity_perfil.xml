@@ -9,39 +9,39 @@
 
     <EditText
         android:id="@+id/etEdad2"
-        android:hint="@string/edad"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="360dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/edad"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etNombreApellidos2"
-        android:hint="@string/nya"
         android:layout_width="246dp"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="120dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/nya"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etCorreo2"
-        android:hint="@string/correo"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="201dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/correo"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -50,56 +50,59 @@
         android:id="@+id/btnEdita"
         android:layout_width="133dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="68dp"
         android:background="@drawable/redondeado"
         android:text="@string/edita"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasena2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/etSexo2"
-        android:hint="@string/sexo"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="282dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/sexo"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etContrasena2"
-        android:hint="@string/contra"
         android:layout_width="246dp"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="531dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/contra"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etAltura2"
-        android:hint="@string/altura"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="446dp"
         android:background="#FFF"
         android:ems="10"
+        android:hint="@string/altura"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="251dp"
-        android:layout_height="55dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
         android:text="Perfil del Usuario"
