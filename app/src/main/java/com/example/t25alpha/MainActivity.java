@@ -13,7 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-
 public class MainActivity extends AppCompatActivity {
     private Button btnUsuario;
     private Button btnIniSesion;
@@ -21,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private String LANG_CURRENT = "en";
     private EditText etUsuario;
     private EditText etPassword;
+    private Button btMostrar;
+    private Button btAgregar;
 
 
     @Override
@@ -30,15 +31,34 @@ public class MainActivity extends AppCompatActivity {
         btnUsuario = (Button) findViewById(R.id.btnCrearUsuario);
         btnIniSesion = (Button) findViewById(R.id.btnIniciarSesion);
         olvidarPass = (TextView) findViewById(R.id.txtOlvidarCuenta);
+        btMostrar = (Button) findViewById(R.id.btnMostrar);
         etUsuario = findViewById(R.id.eTUsername);
         etPassword = findViewById(R.id.eTPassword);
+        btAgregar = findViewById(R.id.btnMostrar);
 
+        final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
 
+        btAgregar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BDModelo modelo = new BDModelo();
+                bdprojecte.buscarUsuarios(modelo,etUsuario.getText().toString());
+                etPassword.setText(modelo.getPassword());
+            }
+        });
+
+        btMostrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), BDMain.class);
+                startActivity(intent);
+            }
+        });
 
         findViewById(R.id.btn_english).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (LANG_CURRENT.equals("es") || LANG_CURRENT.equals("ca") ) {
+                if (LANG_CURRENT.equals("es") || LANG_CURRENT.equals("ca")) {
                     changeLang(MainActivity.this, "en");
                 }
                 finish();
@@ -68,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public void changeLang(Context context, String lang) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = preferences.edit();
@@ -86,18 +107,23 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnClickIniciarSesion(View view) {
-        if(etUsuario.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()){
-            Toast.makeText(MainActivity.this,"Tienes que escribir datos",Toast.LENGTH_SHORT).show();
-        }
-        else {
+        final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
+        if (etUsuario.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()) {
+            Toast.makeText(MainActivity.this, "Tienes que escribir datos", Toast.LENGTH_SHORT).show();
+        } else {
             Intent intent = new Intent(view.getContext(), menuPrincipal.class);
             startActivity(intent);
+            bdprojecte.agregarCampos(etUsuario.getText().toString(), etPassword.getText().toString());
+            Toast.makeText(getApplicationContext(), "SE AGREGO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+
         }
     }
 
     public void btnCLickCrearUsuari(View view) {
         Intent intent = new Intent(view.getContext(), CrearUsuari.class);
         startActivity(intent);
+
+
     }
 
     public void linkOlvidePass(View view) {

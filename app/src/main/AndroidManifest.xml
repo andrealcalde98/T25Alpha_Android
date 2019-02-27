@@ -14,6 +14,7 @@
         <activity android:name=".RestablecerContrasena" />
         <activity android:name=".CrearUsuari" />
         <activity android:name=".Main_semanas" />
+        <activity android:name=".BDMain"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

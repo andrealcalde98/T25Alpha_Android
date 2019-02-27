@@ -55,7 +55,6 @@ public class adaptadorSemanas extends RecyclerView.Adapter<adaptadorSemanas.View
 
         public ViewHolderDatos(final View itemView) {
             super(itemView);
-
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
