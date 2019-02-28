@@ -3,6 +3,8 @@ package com.example.t25alpha;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etPassword;
     private Button btMostrar;
     private Button btAgregar;
+    private Cursor validacion;
 
 
     @Override
@@ -36,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.eTPassword);
         btAgregar = findViewById(R.id.btnMostrar);
 
-        final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
+      /*  final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
 
         btAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 bdprojecte.buscarUsuarios(modelo,etUsuario.getText().toString());
                 etPassword.setText(modelo.getPassword());
             }
-        });
+        });*/
 
         btMostrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,17 +110,27 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnClickIniciarSesion(View view) {
-        final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
-        if (etUsuario.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()) {
-            Toast.makeText(MainActivity.this, "Tienes que escribir datos", Toast.LENGTH_SHORT).show();
-        } else {
-            Intent intent = new Intent(view.getContext(), menuPrincipal.class);
-            startActivity(intent);
-            bdprojecte.agregarCampos(etUsuario.getText().toString(), etPassword.getText().toString());
-            Toast.makeText(getApplicationContext(), "SE AGREGO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+        BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
+        SQLiteDatabase db=bdprojecte.getWritableDatabase();
+        String usuario = etUsuario.getText().toString();
+        String password = etPassword.getText().toString();
+        validacion=db.rawQuery("SELECT usuario,password FROM USUARIOS WHERE USUARIO='"+usuario+"'AND PASSWORD='"+password+"'",null);
+            if(validacion.moveToFirst()) {
+                String usua = validacion.getString(0);
+                String pass = validacion.getString(1);
+                if(usuario.equals(usua)&&password.equals(pass)){
+                    Intent intent = new Intent(this, menuPrincipal.class);
+                    startActivity(intent);
 
+                    etUsuario.setText("");
+                    etPassword.setText("");
+                }
+            }
+            else{
+                Toast.makeText(this, "USUARIO I/O CONTRASEÑA INCORRECTOS", Toast.LENGTH_SHORT).show();
+            }
         }
-    }
+
 
     public void btnCLickCrearUsuari(View view) {
         Intent intent = new Intent(view.getContext(), CrearUsuari.class);
