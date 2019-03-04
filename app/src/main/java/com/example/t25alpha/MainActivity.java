@@ -9,8 +9,11 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btMostrar;
     private Button btAgregar;
     private Cursor validacion;
+    private ImageView logo;
 
 
     @Override
@@ -38,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         etUsuario = findViewById(R.id.eTUsername);
         etPassword = findViewById(R.id.eTPassword);
         btAgregar = findViewById(R.id.btnMostrar);
+        logo = (ImageView) findViewById(R.id.image_logo);
+
+        rotacion();
 
       /*  final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
 
@@ -144,6 +151,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void rotacion(){
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.rotacion);
+        animation.setFillAfter(true);
+        logo.startAnimation(animation);
 
-}
+    }
+    }
+
 
