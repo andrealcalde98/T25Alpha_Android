@@ -58,7 +58,7 @@ public class adaptadorSemanas extends RecyclerView.Adapter<adaptadorSemanas.View
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                        Intent intent = new Intent(context, menuPrincipal.class);
+                        Intent intent = new Intent(context, Dias.class);
                         context.startActivity(intent);
 
                 }
