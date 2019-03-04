@@ -9,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PerfilActivity"></activity>
+        <activity
+            android:name=".Dias"
+            android:label="@string/title_activity_dias"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PerfilActivity" />
         <activity android:name=".menuPrincipal" />
         <activity android:name=".RestablecerContrasena" />
         <activity android:name=".CrearUsuari" />
         <activity android:name=".Main_semanas" />
-        <activity android:name=".BDMain"/>
+        <activity android:name=".BDMain" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
