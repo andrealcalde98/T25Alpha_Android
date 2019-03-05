@@ -44,6 +44,18 @@ public class PerfilActivity extends AppCompatActivity {
             }
         });
 
+        String recuperar_variable_usuario = getIntent().getStringExtra("variable_usuario_final");
+        nomCogmon.setText(recuperar_variable_usuario);
+        String recuperar_variable_correo = getIntent().getStringExtra("variable_correo_final");
+        correu.setText(recuperar_variable_correo);
+        String recuperar_variable_sexe = getIntent().getStringExtra("variable_sexe_final");
+        sexe.setText(recuperar_variable_sexe);
+        String recuperar_variable_edad = getIntent().getStringExtra("variable_edad_final");
+        edat.setText(recuperar_variable_edad);
+        String recuperar_variable_altura = getIntent().getStringExtra("variable_altura_final");
+        altura.setText(recuperar_variable_altura);
+        String recuperar_variable_password = getIntent().getStringExtra("variable_password_final");
+        contrasenya.setText(recuperar_variable_password);
     }
 
 

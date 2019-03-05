@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_light_background"
+    android:background="#D3D3D3"
     tools:context=".PerfilActivity">
 
     <EditText
@@ -14,6 +14,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         android:background="#FFF"
+        android:textColor="#000"
         android:ems="10"
         android:hint="@string/edad"
         android:inputType="textPersonName"
@@ -25,6 +26,7 @@
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
+        android:textColor="#000"
         android:layout_marginTop="128dp"
         android:background="#FFF"
         android:ems="10"
@@ -40,6 +42,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         android:background="#FFF"
+        android:textColor="#000"
         android:ems="10"
         android:hint="@string/correo"
         android:inputType="textPersonName"
@@ -55,6 +58,7 @@
         android:layout_marginBottom="68dp"
         android:background="@drawable/redondeado"
         android:text="@string/edita"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etContrasena2"
@@ -62,6 +66,7 @@
 
     <EditText
         android:id="@+id/etSexo2"
+        android:textColor="#000"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -81,8 +86,9 @@
         android:layout_marginTop="40dp"
         android:background="#FFF"
         android:ems="10"
+        android:textColor="#000"
         android:hint="@string/contra"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAltura2" />
 
@@ -95,6 +101,7 @@
         android:background="#FFF"
         android:ems="10"
         android:hint="@string/altura"
+        android:textColor="#000"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEdad2" />
@@ -107,6 +114,7 @@
         android:layout_marginTop="32dp"
         android:text="Perfil del Usuario"
         android:textSize="30sp"
+        android:textColor="#000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

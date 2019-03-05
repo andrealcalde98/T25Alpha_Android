@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Rehabilita't</string>
+    <string name="app_name" translatable="false">Rehabilitat</string>
     <string name="txtOlvideContrasena">Has oblidat la teva contrasenya?</string>
     <string name="txt_comentario_restablecer_contrasena">Per restablir contrasenya fes servir el numero de telfon o email</string>
     <string name="staturday" translatable="false">Staturday</string>

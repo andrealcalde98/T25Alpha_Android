@@ -46,17 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         rotacion();
 
-      /*  final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
-
-        btAgregar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                BDModelo modelo = new BDModelo();
-                bdprojecte.buscarUsuarios(modelo,etUsuario.getText().toString());
-                etPassword.setText(modelo.getPassword());
-            }
-        });*/
-
         btMostrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,12 +110,23 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase db=bdprojecte.getWritableDatabase();
         String usuario = etUsuario.getText().toString();
         String password = etPassword.getText().toString();
-        validacion=db.rawQuery("SELECT usuario,password FROM USUARIOS WHERE USUARIO='"+usuario+"'AND PASSWORD='"+password+"'",null);
+        validacion=db.rawQuery("SELECT usuario,password,correo,sexe,edad,altura FROM USUARIOS WHERE USUARIO='"+usuario+"'AND PASSWORD='"+password+"'",null);
             if(validacion.moveToFirst()) {
                 String usua = validacion.getString(0);
                 String pass = validacion.getString(1);
+                String corr = validacion.getString(2);
+                String sex = validacion.getString(3);
+                String eda = validacion.getString(4);
+                String altu = validacion.getString(5);
                 if(usuario.equals(usua)&&password.equals(pass)){
+
                     Intent intent = new Intent(this, menuPrincipal.class);
+                    intent.putExtra("variable_usuario",usua);
+                    intent.putExtra("variable_password",pass);
+                    intent.putExtra("variable_correo",corr);
+                    intent.putExtra("variable_sexe",sex);
+                    intent.putExtra("variable_edad",eda);
+                    intent.putExtra("variable_altura",altu);
                     startActivity(intent);
 
                     etUsuario.setText("");
