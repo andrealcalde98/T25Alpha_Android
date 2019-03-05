@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity {
 
@@ -19,28 +20,21 @@ public class PerfilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
 
         contrasenya = findViewById(R.id.etContrasena2);
-        contrasenya.setEnabled(false);
         altura = findViewById(R.id.etAltura2);
-        altura.setEnabled(false);
         edat = findViewById(R.id.etEdad2);
-        edat.setEnabled(false);
         sexe = findViewById(R.id.etSexo2);
-        sexe.setEnabled(false);
         correu = findViewById(R.id.etCorreo2);
-        correu.setEnabled(false);
         nomCogmon = findViewById(R.id.etNombreApellidos2);
         nomCogmon.setEnabled(false);
+        edita = (Button) findViewById(R.id.btnEdita);
+        final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
 
-        findViewById(R.id.btnEdita).setOnClickListener(new View.OnClickListener() {
+        edita.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nomCogmon.isEnabled();
-                correu.isEnabled();
-                sexe.isEnabled();
-                edat.isEnabled();
-                altura.isEnabled();
-                contrasenya.isEnabled();
-
+                bdprojecte.editarDatos(nomCogmon.getText().toString(),correu.getText().toString(),sexe.getText().toString(),
+                        edat.getText().toString(),altura.getText().toString(),contrasenya.getText().toString());
+                Toast.makeText(getApplicationContext(),"DADES MODIFICADES CORRECTAMENT",Toast.LENGTH_SHORT).show();
             }
         });
 
