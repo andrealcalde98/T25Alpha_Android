@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">T25Alpha</string>
+    <string name="app_name" translatable="false">Rehabilita't</string>
     <string name="txtOlvideContrasena">Has oblidat la teva contrasenya?</string>
     <string name="txt_comentario_restablecer_contrasena">Per restablir contrasenya fes servir el numero de telfon o email</string>
     <string name="staturday" translatable="false">Staturday</string>
@@ -22,8 +22,9 @@
     <string name="buscar">Cerca</string>
     <string name="semana">Setmana</string>
     <string name="edita">Edita</string>
-    <string name="title_activity_dias">Dias</string>
+    <string name="title_activity_dias">Dies</string>
     <string name="action_settings">Opcions</string>
+
 
 
 
