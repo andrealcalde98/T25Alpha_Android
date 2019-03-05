@@ -20,4 +20,6 @@
     <string name="buscar">Buscar</string>
     <string name="semana">Semana</string>
     <string name="edita">Editar</string>
+    <string name="title_activity_dias">Dias</string>
+    <string name="action_settings">Opciones</string>
 </resources>

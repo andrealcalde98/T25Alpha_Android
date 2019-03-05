@@ -102,7 +102,6 @@ public class Dias extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.lunes, container, false);
-          //  Button button = (Button) rootView.findViewById(R.id.btn_ejemplo);
           //  TextView textView = (TextView) rootView.findViewById(R.id.section_label);
           //  textView.setText(getString(R.string.section_format));
             return rootView;
@@ -140,8 +139,102 @@ public class Dias extends AppCompatActivity {
         }
     }
 
+    public static class Fragment3 extends android.support.v4.app.Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
 
+        public Fragment3() {
+        }
 
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static Fragment3 newInstance(int sectionNumber) {
+            Fragment3 fragment = new Fragment3();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.lunes, container, false);
+            //  Button button = (Button) rootView.findViewById(R.id.btn_ejemplo);
+            //  TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+            //  textView.setText(getString(R.string.section_format));
+            return rootView;
+        }
+    }
+    public static class Fragment4 extends android.support.v4.app.Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
+
+        public Fragment4() {
+        }
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static Fragment4 newInstance(int sectionNumber) {
+            Fragment4 fragment = new Fragment4();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.lunes, container, false);
+            //  Button button = (Button) rootView.findViewById(R.id.btn_ejemplo);
+            //  TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+            //  textView.setText(getString(R.string.section_format));
+            return rootView;
+        }
+    }
+    public static class Fragment5 extends android.support.v4.app.Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
+
+        public Fragment5() {
+        }
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static Fragment5 newInstance(int sectionNumber) {
+            Fragment5 fragment = new Fragment5();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.lunes, container, false);
+            //  Button button = (Button) rootView.findViewById(R.id.btn_ejemplo);
+            //  TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+            //  textView.setText(getString(R.string.section_format));
+            return rootView;
+        }
+    }
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
@@ -161,11 +254,11 @@ public class Dias extends AppCompatActivity {
             }else if (position==1){
                 return Fragment2.newInstance(position);
             }else if (position==2){
-                return Fragment2.newInstance(position);
+                return Fragment3.newInstance(position);
             }else if (position==3){
-                return Fragment2.newInstance(position);
+                return Fragment4.newInstance(position);
             }else {
-                return Fragment2.newInstance(position);
+                return Fragment5.newInstance(position);
             }
 
 
@@ -173,7 +266,7 @@ public class Dias extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 5 total pages.
             return 5;
         }
 
