@@ -5,7 +5,8 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dias$Fragment">
+    tools:context=".Dias$Fragment"
+    android:background="@color/ColorDeFondo">
 
     <TextView
         android:id="@+id/textView2"

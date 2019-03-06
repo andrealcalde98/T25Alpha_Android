@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main_semanas"
-    android:background="@color/ColorDeFondo">
+    tools:context=".Grafico">
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="395dp"
-        android:layout_height="715dp"
-        android:id="@+id/rvSesiones"/>
-    </LinearLayout>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/graficobarras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+</LinearLayout>

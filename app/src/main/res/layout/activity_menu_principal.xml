@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_light_background"
+    android:background="@color/ColorDeFondo"
     app:layout_behavior=""
     tools:context=".menuPrincipal">
 
@@ -16,6 +16,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="35dp"
         android:background="#ff6624"
+        android:onClick="onClickStaturday"
         android:drawableBottom="@drawable/weighing"
         android:text="@string/staturday"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,6 +46,7 @@
         android:layout_marginBottom="31dp"
         android:background="#72bb53"
         android:drawableBottom="@drawable/graph"
+        android:onClick="onClickGrafica"
         android:text="@string/grafica"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
