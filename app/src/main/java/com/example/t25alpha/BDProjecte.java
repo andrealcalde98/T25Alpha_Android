@@ -50,10 +50,10 @@ public class BDProjecte extends SQLiteOpenHelper {
         return usuarios;
     }
 
-    public void buscarLogin(String usuario, String password){
+    public void editarDatos(String usuario,String correo, String sexe, String edad, String altura,String password){
         SQLiteDatabase bd=getWritableDatabase();
         if(bd!=null){
-            bd.execSQL("SELECT * FROM USUARIOS WHERE USUARIO='"+usuario+"'AND PASSWORD='"+password+"'");
+            bd.execSQL("UPDATE USUARIOS SET CORREO='"+correo+"',SEXE='"+sexe+"',EDAD='"+edad+"',ALTURA='"+altura+"',PASSWORD='"+password+"'WHERE USUARIO='"+usuario+"'");
             bd.close();
         }
     }
