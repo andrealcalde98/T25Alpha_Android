@@ -28,16 +28,8 @@ public class BDModelo {
 
     public String getAltura(){return altura;}
 
-
-    public void setUsuari(String usuario){
-        this.usuario = usuario;
-    }
-
     public String getPassword(){
         return password;
     }
 
-    public void setPassword(String password){
-        this.password = password;
-    }
 }
