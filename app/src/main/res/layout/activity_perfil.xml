@@ -8,7 +8,7 @@
     tools:context=".PerfilActivity">
 
     <EditText
-        android:id="@+id/etContrasena"
+        android:id="@+id/etContrasena2"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -22,10 +22,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAltura" />
+        app:layout_constraintTop_toBottomOf="@+id/etAltura2" />
 
     <EditText
-        android:id="@+id/etAltura"
+        android:id="@+id/etAltura2"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -39,10 +39,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEdad" />
+        app:layout_constraintTop_toBottomOf="@+id/etEdad2" />
 
     <EditText
-        android:id="@+id/etEdad"
+        android:id="@+id/etEdad2"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -56,10 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSexo" />
+        app:layout_constraintTop_toBottomOf="@+id/etSexo2" />
 
     <EditText
-        android:id="@+id/etSexo"
+        android:id="@+id/etSexo2"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -73,10 +73,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo2" />
 
     <EditText
-        android:id="@+id/etCorreo"
+        android:id="@+id/etCorreo2"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -90,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNombreApellidos" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombreApellidos2" />
 
     <TextView
         android:id="@+id/lblTitulo"
@@ -108,7 +108,7 @@
         tools:text="@string/perfil" />
 
     <EditText
-        android:id="@+id/etNombreApellidos"
+        android:id="@+id/etNombreApellidos2"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:background="@drawable/et_custom"
@@ -125,7 +125,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnRegistrarUsuari"
+        android:id="@+id/btnEdita"
         android:layout_width="382dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -136,7 +136,7 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/txt_web"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etContrasena"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasena2"
         app:layout_constraintVertical_bias="0.692" />
 
     <TextView
