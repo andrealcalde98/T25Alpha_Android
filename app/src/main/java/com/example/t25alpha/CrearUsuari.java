@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class CrearUsuari extends AppCompatActivity {
@@ -16,12 +15,12 @@ public class CrearUsuari extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_usuari);
-        nom = (EditText) findViewById(R.id.etNombreApellidos);
-        correu = (EditText) findViewById(R.id.etCorreo);
-        sexe = (EditText) findViewById(R.id.etSexo);
-        edad = (EditText) findViewById(R.id.etEdad);
-        altura = (EditText) findViewById(R.id.etAltura);
-        password = (EditText) findViewById(R.id.etContrasena);
+        nom = (EditText) findViewById(R.id.etNombreApellidos2);
+        correu = (EditText) findViewById(R.id.etCorreo2);
+        sexe = (EditText) findViewById(R.id.etSexo2);
+        edad = (EditText) findViewById(R.id.etEdad2);
+        altura = (EditText) findViewById(R.id.etAltura2);
+        password = (EditText) findViewById(R.id.etContrasena2);
         btnRegistrar = (Button) findViewById(R.id.btnRegistrarUsuari);
 
         final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
