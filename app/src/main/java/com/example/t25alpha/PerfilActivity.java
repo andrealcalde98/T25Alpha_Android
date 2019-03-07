@@ -63,6 +63,19 @@ public class PerfilActivity extends AppCompatActivity {
         altura.setText(recuperar_variable_altura);
         String recuperar_variable_password = getIntent().getStringExtra("variable_password_final");
         contrasenya.setText(recuperar_variable_password);
+
+        String restablecer_usuario = getIntent().getStringExtra("restablecer_usuario");
+        nomCogmon.setText(restablecer_usuario);
+        String restablecer_correo = getIntent().getStringExtra("restablecer_correo");
+        correu.setText(restablecer_correo);
+        String restablecer_sexe = getIntent().getStringExtra("restablecer_sexe");
+        sexe.setText(restablecer_sexe);
+        String restablcer_edad = getIntent().getStringExtra("restablecer_edad");
+        edat.setText(restablcer_edad);
+        String restablecer_altura = getIntent().getStringExtra("restablecer_altura");
+        altura.setText(restablecer_altura);
+        String restablcer_password = getIntent().getStringExtra("restablecer_password");
+        contrasenya.setText(restablcer_password);
     }
 
 
