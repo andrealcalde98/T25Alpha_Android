@@ -34,4 +34,15 @@ public class menuPrincipal extends AppCompatActivity {
         intent.putExtra("variable_altura_final",recuperar_variable_altura);
         startActivity(intent);
     }
+
+    public void onClickStaturday(View view) {
+        Intent intent = new Intent(this,Staturday.class);
+        startActivity(intent);
+
+    }
+
+    public void onClickGrafica(View view) {
+        Intent intent = new Intent(this, Grafico.class);
+        startActivity(intent);
+    }
 }
