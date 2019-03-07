@@ -9,11 +9,11 @@
 
     <EditText
         android:id="@+id/eTUsername"
-        android:layout_width="292dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="336dp"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="276dp"
         android:autofillHints="no"
-        android:background="#b47cff"
+        android:background="@drawable/et_custom"
         android:ems="10"
         android:hint="@string/usuario"
         android:inputType="textPersonName"
@@ -21,16 +21,15 @@
         android:maxLines="1"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/eTPassword"
-        android:layout_width="290dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@color/ColorEditText"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/et_custom"
         android:ems="10"
         android:hint="@string/contra"
         android:inputType="textPassword"
@@ -38,34 +37,36 @@
         android:maxLines="1"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTUsername" />
 
 
     <Button
         android:id="@+id/btnIniciarSesion"
-        android:layout_width="121dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="32dp"
-        android:textColor="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/redondeado"
         android:onClick="btnClickIniciarSesion"
         android:text="@string/iniciar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
 
     <Button
         android:id="@+id/btnCrearUsuario"
-        android:layout_width="125dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="56dp"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="12dp"
         android:background="@drawable/redondeado"
         android:onClick="btnCLickCrearUsuari"
-        android:textColor="@android:color/white"
         android:text="@string/crear"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
 
@@ -73,7 +74,7 @@
         android:id="@+id/txtOlvidarCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="88dp"
         android:autoLink="all"
         android:onClick="linkOlvidePass"
         android:text="@string/txtOlvideContrasena"
