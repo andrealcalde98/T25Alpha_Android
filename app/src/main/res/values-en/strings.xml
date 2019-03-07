@@ -15,11 +15,18 @@
     <string name="sexo">Sex</string>
     <string name="edad">Age</string>
     <string name="altura">Height</string>
-    <string name="titulo_crear">Create your User</string>
     <string name="restablecer_contraseña">Reset Password</string>
     <string name="buscar">Search</string>
     <string name="semana">Week</string>
     <string name="edita">Edit</string>
     <string name="title_activity_dias">Days</string>
     <string name="action_settings">Options</string>
+    <string name="conseguit">Done!</string>
+    <string name="torna_hi">Repeat exercice!</string>
+    <string name="temp_estimat">Estimed Time: 20m</string>
+    <string name="mediocre">Mediocre</string>
+    <string name="FET">Done! go to the next day</string>
+    <string name="NOFET">You have to repeat the exercice :(</string>
+    <string name="temps_estimat2">Estimed Time: 10m</string>
+    <string name="temps_estimat3">Estimed Time: 5m</string>
 </resources>
