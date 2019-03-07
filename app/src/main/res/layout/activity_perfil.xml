@@ -8,130 +8,149 @@
     tools:context=".PerfilActivity">
 
     <EditText
-        android:id="@+id/etEdad2"
-        android:layout_width="246dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/ColorEditText"
-        android:ems="10"
-        android:hint="@string/edad"
-        android:inputType="textPersonName"
-        android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSexo2" />
-
-    <EditText
-        android:id="@+id/etNombreApellidos2"
-        android:layout_width="246dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="128dp"
-        android:background="@color/ColorEditText"
-        android:ems="10"
-        android:hint="@string/nya"
-        android:inputType="textPersonName"
-        android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/etCorreo2"
-        android:layout_width="246dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/ColorEditText"
-        android:ems="10"
-        android:hint="@string/correo"
-        android:inputType="textPersonName"
-        android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNombreApellidos2" />
-
-    <Button
-        android:id="@+id/btnEdita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
+        android:id="@+id/etContrasena"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="76dp"
-        android:background="@drawable/redondeado"
-        android:text="@string/edita"
-        android:textColor="#FFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/etSexo2"
-        android:layout_width="246dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/ColorEditText"
-        android:ems="10"
-        android:hint="@string/sexo"
-        android:inputType="textPersonName"
-        android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCorreo2" />
-
-    <EditText
-        android:id="@+id/etContrasena2"
-        android:layout_width="246dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/ColorEditText"
+        android:background="@drawable/et_custom"
         android:ems="10"
         android:hint="@string/contra"
         android:inputType="textPassword"
         android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAltura2" />
+        app:layout_constraintTop_toBottomOf="@+id/etAltura" />
 
     <EditText
-        android:id="@+id/etAltura2"
-        android:layout_width="246dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/ColorEditText"
+        android:id="@+id/etAltura"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/et_custom"
         android:ems="10"
         android:hint="@string/altura"
         android:inputType="textPersonName"
         android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEdad2" />
+        app:layout_constraintTop_toBottomOf="@+id/etEdad" />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:hint="@string/edad"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSexo" />
+
+    <EditText
+        android:id="@+id/etSexo"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:hint="@string/sexo"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:hint="@string/correo"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreApellidos" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lblTitulo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="569dp"
-        android:text="Perfil del Usuario"
-        android:textColor="#FFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_web"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="36dp"
+
+        android:fontFamily="@font/bonita"
+        android:text="@string/titulo_crear"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/perfil" />
+
+    <EditText
+        android:id="@+id/etNombreApellidos"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:background="@drawable/et_custom"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/nya"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrarUsuari"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/redondeado"
+        android:text="@string/edita"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txt_web"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasena"
+        app:layout_constraintVertical_bias="0.692" />
 
     <TextView
         android:id="@+id/txt_web"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Prem aqui per mes informacio a la web"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/bonita"
+        android:text="@string/enllaç_web"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/btnEdita"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etContrasena2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
