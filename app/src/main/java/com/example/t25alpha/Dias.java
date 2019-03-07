@@ -1,5 +1,6 @@
 package com.example.t25alpha;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -14,6 +15,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Dias extends AppCompatActivity {
 
@@ -54,10 +58,11 @@ public class Dias extends AppCompatActivity {
      * A placeholder fragment containing a simple view.
      */
     public static class Fragment extends android.support.v4.app.Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
+        Button conseguit;
+        Button mediocre;
+        Button torna;
+        View vista;
+
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public Fragment() {
@@ -78,18 +83,46 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.lunes, container, false);
-          //  TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-          //  textView.setText(getString(R.string.section_format));
-            return rootView;
+
+            vista = inflater.inflate(R.layout.lunes, container, false);
+            conseguit = (Button) vista.findViewById(R.id.button_conseguit);
+            mediocre = (Button) vista.findViewById(R.id.button_mediocre);
+            torna = (Button) vista.findViewById(R.id.button_torna);
+
+            conseguit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.FET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(false);
+                    mediocre.setEnabled(false);
+                }
+            });
+            mediocre.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            torna.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(true);
+                    mediocre.setEnabled(true);
+                }
+            });
+            return vista;
         }
     }
 
     public static class Fragment2 extends android.support.v4.app.Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
+
+        Button conseguit;
+        Button mediocre;
+        Button torna;
+        View vista;
+
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public Fragment2() {
@@ -110,17 +143,46 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.martes, container, false);
+            vista = inflater.inflate(R.layout.lunes, container, false);
+            conseguit = (Button) vista.findViewById(R.id.button_conseguit);
+            mediocre = (Button) vista.findViewById(R.id.button_mediocre);
+            torna = (Button) vista.findViewById(R.id.button_torna);
 
-            return rootView;
+            conseguit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.FET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(false);
+                    mediocre.setEnabled(false);
+                }
+            });
+            mediocre.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            torna.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(true);
+                    mediocre.setEnabled(true);
+                }
+            });
+            return vista;
         }
     }
 
     public static class Fragment3 extends android.support.v4.app.Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
+
+        Button conseguit;
+        Button mediocre;
+        Button torna;
+        View vista;
+
+
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public Fragment3() {
@@ -141,18 +203,45 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.lunes, container, false);
-            //  Button button = (Button) rootView.findViewById(R.id.btn_ejemplo);
-            //  TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            //  textView.setText(getString(R.string.section_format));
-            return rootView;
+            vista = inflater.inflate(R.layout.lunes, container, false);
+            conseguit = (Button) vista.findViewById(R.id.button_conseguit);
+            mediocre = (Button) vista.findViewById(R.id.button_mediocre);
+            torna = (Button) vista.findViewById(R.id.button_torna);
+
+            conseguit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.FET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(false);
+                    mediocre.setEnabled(false);
+                }
+            });
+            mediocre.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            torna.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(true);
+                    mediocre.setEnabled(true);
+                }
+            });
+            return vista;
         }
     }
     public static class Fragment4 extends android.support.v4.app.Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
+
+        Button conseguit;
+        Button mediocre;
+        Button torna;
+        View vista;
+
+
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public Fragment4() {
@@ -173,18 +262,44 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.lunes, container, false);
-            //  Button button = (Button) rootView.findViewById(R.id.btn_ejemplo);
-            //  TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            //  textView.setText(getString(R.string.section_format));
-            return rootView;
+            vista = inflater.inflate(R.layout.lunes, container, false);
+            conseguit = (Button) vista.findViewById(R.id.button_conseguit);
+            mediocre = (Button) vista.findViewById(R.id.button_mediocre);
+            torna = (Button) vista.findViewById(R.id.button_torna);
+
+            conseguit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.FET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(false);
+                    mediocre.setEnabled(false);
+                }
+            });
+            mediocre.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            torna.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(true);
+                    mediocre.setEnabled(true);
+                }
+            });
+            return vista;
         }
     }
     public static class Fragment5 extends android.support.v4.app.Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
+
+        Button conseguit;
+        Button mediocre;
+        Button torna;
+        View vista;
+
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public Fragment5() {
@@ -205,11 +320,35 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.lunes, container, false);
-            //  Button button = (Button) rootView.findViewById(R.id.btn_ejemplo);
-            //  TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            //  textView.setText(getString(R.string.section_format));
-            return rootView;
+            vista = inflater.inflate(R.layout.lunes, container, false);
+            conseguit = (Button) vista.findViewById(R.id.button_conseguit);
+            mediocre = (Button) vista.findViewById(R.id.button_mediocre);
+            torna = (Button) vista.findViewById(R.id.button_torna);
+
+            conseguit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.FET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(false);
+                    mediocre.setEnabled(false);
+                }
+            });
+            mediocre.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            torna.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), getString(R.string.NOFET), Toast.LENGTH_SHORT).show();
+                    conseguit.setEnabled(true);
+                    mediocre.setEnabled(true);
+                }
+            });
+            return vista;
         }
     }
     /**
