@@ -15,7 +15,7 @@
         android:layout_marginStart="17dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="35dp"
-        android:background="#ff6624"
+        android:background="#e03dea "
         android:onClick="onClickStaturday"
         android:drawableBottom="@drawable/weighing"
         android:text="@string/staturday"
@@ -30,7 +30,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="36dp"
-        android:background="#ff3823"
+        android:background="#499ebb "
         android:drawableBottom="@drawable/video"
         android:text="@string/videos"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +44,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="31dp"
-        android:background="#72bb53"
+        android:background="#98c7eb "
         android:drawableBottom="@drawable/graph"
         android:onClick="onClickGrafica"
         android:text="@string/grafica"
@@ -78,13 +78,14 @@
         android:layout_height="0dp"
         android:layout_marginTop="23dp"
         android:layout_marginBottom="24dp"
-        android:background="#f4eb49"
+        android:background="#b03fe1 "
         android:drawableBottom="@drawable/users"
         android:onClick="onClickPerfil"
         android:text="@string/perfil"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="@+id/button3"
         app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
 </android.support.constraint.ConstraintLayout>

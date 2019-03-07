@@ -1,16 +1,19 @@
 package com.example.t25alpha;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity {
 
     EditText nomCogmon, correu, sexe, edat, altura, contrasenya;
-
+    TextView web;
     Button edita;
 
     @Override
@@ -26,6 +29,17 @@ public class PerfilActivity extends AppCompatActivity {
         nomCogmon = findViewById(R.id.etNombreApellidos2);
         nomCogmon.setEnabled(false);
         edita = (Button) findViewById(R.id.btnEdita);
+        web = findViewById(R.id.txt_web);
+
+        web.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://www.rehabilitat.cat"));
+                startActivity(intent);
+            }
+        });
+
         final BDProjecte bdprojecte = new BDProjecte(getApplicationContext());
 
         edita.setOnClickListener(new View.OnClickListener() {
