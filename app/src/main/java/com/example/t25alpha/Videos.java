@@ -22,9 +22,9 @@ public class Videos extends AppCompatActivity {
         video5 = (VideoView) findViewById(R.id.videoView5);
 
         String path = ("android.resource://" + getPackageName() +
-                "/" + R.id.);
-        Uri uri = Uri.parse(video);
-        video1.setVideoURI(path);
+                "/" + R.id.appbar);
+        Uri uri = Uri.parse(path);
+
         MediaController media = new MediaController(this);
         video1.setMediaController(media);
         media.setAnchorView(video1);
