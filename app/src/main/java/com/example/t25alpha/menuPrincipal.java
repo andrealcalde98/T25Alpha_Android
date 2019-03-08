@@ -1,6 +1,7 @@
 package com.example.t25alpha;
 
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,11 @@ public class menuPrincipal extends AppCompatActivity {
 
     public void onClickCalendari(View view) {
         Intent intent = new Intent(view.getContext(), Main_semanas.class);
+        startActivity(intent);
+    }
+
+    public void onClickVideo(View view) {
+        Intent intent = new Intent(view.getContext(), Videos.class);
         startActivity(intent);
     }
 

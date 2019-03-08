@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -13,19 +14,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".Grafico"></activity>
-        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".Staturday"/>
+        <activity android:name=".Videos"></activity>
+        <activity
+            android:name=".Grafico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Staturday"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Dias"
             android:label="@string/title_activity_dias"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity  android:theme="@style/AppTheme.NoActionBar" android:name=".PerfilActivity" />
-        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".menuPrincipal" />
-        <activity android:theme="@style/Theme.MaterialComponents.Light" android:name=".RestablecerContrasena" />
-        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".CrearUsuari" />
-        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".Main_semanas" />
-        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".BDMain" />
-        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".MainActivity">
+        <activity
+            android:name=".PerfilActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menuPrincipal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RestablecerContrasena"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity
+            android:name=".CrearUsuari"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main_semanas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BDMain"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
