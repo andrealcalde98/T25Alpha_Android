@@ -23,9 +23,8 @@ public class Staturday extends AppCompatActivity {
             Toast.makeText(this,"No hi ha cap dada a pes",Toast.LENGTH_SHORT).show();
         }
         else {
-            int numero = Integer.parseInt(var_peso);
             Intent intent = new Intent(this,Grafico.class);
-            intent.putExtra("variable_peso",numero);
+            intent.putExtra("variable_peso",var_peso);
             startActivity(intent);
         }
     }

@@ -22,8 +22,7 @@ import java.util.ArrayList;
 public class Grafico extends AppCompatActivity {
     private BarChart barChart;
     private String[]staturday = new String[]{"Prueba1", "Prueba2","Prueba3"};
-   // int var_peso = getIntent().getIntExtra("variable_peso",0);
-    private int[]datos = new int[]{2,20,35};
+    private int[]datos = new int[]{3,20,35};
     private int[]colors=new int[]{Color.BLACK,Color.RED,Color.GREEN};
 
 
