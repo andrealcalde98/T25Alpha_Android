@@ -7,33 +7,95 @@
     android:background="@color/ColorDeFondo"
     tools:context=".Videos">
 
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <VideoView
-            android:id="@+id/videoView1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="281dp" />
-    </FrameLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <FrameLayout
-        android:id="@+id/frameLayout3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+            <FrameLayout
+                android:id="@+id/frameLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <VideoView
-            android:id="@+id/videoView2"
-            android:layout_width="match_parent"
-            android:layout_height="281dp" />
-    </FrameLayout>
+                <VideoView
+                    android:id="@+id/videoView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <VideoView
+                    android:id="@+id/videoView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <VideoView
+                    android:id="@+id/videoView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="281dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+                <VideoView
+                    android:id="@+id/videoView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="277dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <VideoView
+                    android:id="@+id/videoView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
