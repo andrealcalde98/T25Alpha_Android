@@ -17,33 +17,27 @@ public class Videos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_videos);
         video1 = (VideoView) findViewById(R.id.videoView1);
-
-        /*btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        /*video3 = (VideoView) findViewById(R.id.videoView3);
+        video3 = (VideoView) findViewById(R.id.videoView3);
         video4 = (VideoView) findViewById(R.id.videoView4);
-        video5 = (VideoView) findViewById(R.id.videoView5);*/
+        video5 = (VideoView) findViewById(R.id.videoView5);
 
-        String video = "http://techslides.com/demos/sample-videos/small.mp4";
+        String path = ("android.resource://" + getPackageName() +
+                "/" + R.id.);
         Uri uri = Uri.parse(video);
-        video1.setVideoURI(uri);
+        video1.setVideoURI(path);
         MediaController media = new MediaController(this);
         video1.setMediaController(media);
         media.setAnchorView(video1);
+
+
+    }
+
+
+
+
         /*video1.requestFocus();
         video1.start();*/
 
 
-
-      /*  String videoString = "http://techslides.com/demos/sample-videos/small.mp4";
-        Uri uri2 = Uri.parse(videoString);
-        video2.setMediaController(new MediaController(this));
-        video2.setVideoURI(uri2);
-        video2.requestFocus();
-        video2.start();*/
     }
 }
