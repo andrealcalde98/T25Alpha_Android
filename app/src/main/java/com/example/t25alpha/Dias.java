@@ -142,7 +142,7 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            vista = inflater.inflate(R.layout.lunes, container, false);
+            vista = inflater.inflate(R.layout.martes, container, false);
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
@@ -202,7 +202,7 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            vista = inflater.inflate(R.layout.lunes, container, false);
+            vista = inflater.inflate(R.layout.miercoles, container, false);
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
@@ -261,7 +261,7 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            vista = inflater.inflate(R.layout.lunes, container, false);
+            vista = inflater.inflate(R.layout.jueves, container, false);
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
@@ -319,7 +319,7 @@ public class Dias extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            vista = inflater.inflate(R.layout.lunes, container, false);
+            vista = inflater.inflate(R.layout.viernes, container, false);
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
