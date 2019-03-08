@@ -33,6 +33,7 @@
         android:layout_marginBottom="8dp"
         android:background="#499ebb "
         android:drawableBottom="@drawable/video"
+        android:onClick="onClickVideo"
         android:text="@string/videos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
