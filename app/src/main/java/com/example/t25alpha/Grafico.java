@@ -21,68 +21,75 @@ import java.util.ArrayList;
 
 public class Grafico extends AppCompatActivity {
     private BarChart barChart;
-    private String[]staturday = new String[]{"Prueba1", "Prueba2","Prueba3"};
-    private int[]datos = new int[]{25,20,35};
-    private int[]colors=new int[]{Color.BLACK,Color.RED,Color.GREEN};
+    private String[] staturday = new String[]{"Peso(KG)", "Muñeca(CM)", "Cintura(CM)", "Tiempo(Horas)"};
+    private int[] colors = new int[]{Color.BLACK, Color.RED, Color.GREEN, Color.BLUE};
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grafico);
-        barChart = (BarChart)findViewById(R.id.graficobarras);
+        barChart = (BarChart) findViewById(R.id.graficobarras);
         createCharts();
 
 
     }
-    private Chart getSameChart(Chart chart, String description,int animation){
-    chart.getDescription().setText(description);
-    chart.getDescription().setTextSize(15);
-    chart.animateY(animation);
-    legend(chart);
-    return chart;
+
+    private Chart getSameChart(Chart chart, String description, int animation) {
+        chart.getDescription().setText(description);
+        chart.getDescription().setTextSize(15);
+        chart.animateY(animation);
+        legend(chart);
+        return chart;
     }
 
-    private void legend(Chart chart){
-    Legend legend =chart.getLegend();
-    legend.setForm(Legend.LegendForm.CIRCLE);
-    legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.CENTER);
+    private void legend(Chart chart) {
+        Legend legend = chart.getLegend();
+        legend.setForm(Legend.LegendForm.CIRCLE);
+        legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.CENTER);
 
-    ArrayList<LegendEntry>entries = new ArrayList<>();
-    for (int i = 0; i < staturday.length; i++){
-        LegendEntry entry = new LegendEntry();
-        entry.formColor=colors[i];
-        entry.label=staturday[i];
-        entries.add(entry);
-    }
-    legend.setCustom(entries);
+        ArrayList<LegendEntry> entries = new ArrayList<>();
+        for (int i = 0; i < staturday.length; i++) {
+            LegendEntry entry = new LegendEntry();
+            entry.formColor = colors[i];
+            entry.label = staturday[i];
+            entries.add(entry);
+        }
+        legend.setCustom(entries);
 
     }
-    private ArrayList<BarEntry>getBarEntries(){
-        ArrayList<BarEntry>entries=new ArrayList<>();
+
+    private ArrayList<BarEntry> getBarEntries() {
+        Bundle pasarDatos = this.getIntent().getExtras();
+        int variable_peso = pasarDatos.getInt("variable_peso");
+        int variable_muneca = pasarDatos.getInt("variable_muneca");
+        int variable_cintura = pasarDatos.getInt("variable_cintura");
+        int variable_Tiempo = pasarDatos.getInt("variable_tiempo");
+        int[] datos = new int[]{variable_peso, variable_muneca, variable_cintura, variable_Tiempo};
+        ArrayList<BarEntry> entries = new ArrayList<>();
         for (int i = 0; i < staturday.length; i++)
-            entries.add(new BarEntry(i,datos[i]));
+            entries.add(new BarEntry(i, datos[i]));
         return entries;
     }
 
-    private void axisX(XAxis axis){
+    private void axisX(XAxis axis) {
         axis.setGranularityEnabled(true);
         axis.setPosition(XAxis.XAxisPosition.BOTTOM);
         axis.setValueFormatter(new IndexAxisValueFormatter(staturday));
 
     }
 
-    private void axisLeft(YAxis axis){
+    private void axisLeft(YAxis axis) {
         axis.setSpaceTop(30);
         axis.setAxisMinimum(0);
     }
 
-    private void axisRight(YAxis axis){
+    private void axisRight(YAxis axis) {
         axis.setEnabled(false);
     }
 
-    public void createCharts(){
-        barChart=(BarChart)getSameChart(barChart,"Series",3000);
+    public void createCharts() {
+        barChart = (BarChart) getSameChart(barChart, "Staturday", 3000);
         barChart.setDrawGridBackground(true);
         barChart.setDrawBarShadow(true);
         barChart.setData(getBarData());
@@ -92,17 +99,17 @@ public class Grafico extends AppCompatActivity {
         axisRight(barChart.getAxisRight());
     }
 
-    private DataSet getData(DataSet dataSet){
+    private DataSet getData(DataSet dataSet) {
         dataSet.setColors(colors);
         dataSet.setValueTextSize(Color.WHITE);
         dataSet.setValueTextSize(10);
         return dataSet;
     }
 
-    private BarData getBarData(){
-        BarDataSet barDataSet=(BarDataSet)getData(new BarDataSet(getBarEntries(),""));
+    private BarData getBarData() {
+        BarDataSet barDataSet = (BarDataSet) getData(new BarDataSet(getBarEntries(), ""));
         barDataSet.setBarShadowColor(Color.GRAY);
-        BarData barData=new BarData(barDataSet);
+        BarData barData = new BarData(barDataSet);
         barData.setBarWidth(0.45f);
         return barData;
     }
