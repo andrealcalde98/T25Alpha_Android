@@ -1,6 +1,8 @@
 package com.example.t25alpha;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -16,8 +18,10 @@ import android.view.ViewGroup;
 
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 public class Dias extends AppCompatActivity {
 
@@ -50,17 +54,21 @@ public class Dias extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-
     }
 
     /**
      * A placeholder fragment containing a simple view.
      */
+
+
     public static class Fragment extends android.support.v4.app.Fragment {
         Button conseguit;
         Button mediocre;
         Button torna;
         View vista;
+        private VideoView vvLunes;
+
+
 
         private static final String ARG_SECTION_NUMBER = "section_number";
 
@@ -87,6 +95,8 @@ public class Dias extends AppCompatActivity {
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
+            vvLunes = vista.findViewById(R.id.videoViewLunes);
+            video1();
 
             conseguit.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -113,6 +123,15 @@ public class Dias extends AppCompatActivity {
             });
             return vista;
         }
+        private void video1(){
+            String path = ("android.resource://"+getActivity().getPackageName()) +
+                    "/" + R.raw.potmano;
+            Uri uri = Uri.parse(path);
+            vvLunes.setVideoURI(uri);
+            MediaController media = new MediaController(getContext());
+            vvLunes.setMediaController(media);
+            media.setAnchorView(vvLunes);
+        }
     }
 
     public static class Fragment2 extends android.support.v4.app.Fragment {
@@ -121,6 +140,7 @@ public class Dias extends AppCompatActivity {
         Button mediocre;
         Button torna;
         View vista;
+        VideoView vMartes;
 
         private static final String ARG_SECTION_NUMBER = "section_number";
 
@@ -146,7 +166,9 @@ public class Dias extends AppCompatActivity {
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
+            vMartes = vista.findViewById(R.id.vvMartes);
 
+            video2();
             conseguit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -172,6 +194,15 @@ public class Dias extends AppCompatActivity {
             });
             return vista;
         }
+        private void video2(){
+            String path = ("android.resource://"+getActivity().getPackageName()) +
+                    "/" + R.raw.extension;
+            Uri uri = Uri.parse(path);
+            vMartes.setVideoURI(uri);
+            MediaController media = new MediaController(getContext());
+            vMartes.setMediaController(media);
+            media.setAnchorView(vMartes);
+        }
     }
 
     public static class Fragment3 extends android.support.v4.app.Fragment {
@@ -180,6 +211,7 @@ public class Dias extends AppCompatActivity {
         Button mediocre;
         Button torna;
         View vista;
+        VideoView vMiercoles;
 
 
         private static final String ARG_SECTION_NUMBER = "section_number";
@@ -206,6 +238,8 @@ public class Dias extends AppCompatActivity {
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
+            vMiercoles = vista.findViewById(R.id.vvMiercoles);
+            video3();
 
             conseguit.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -232,6 +266,15 @@ public class Dias extends AppCompatActivity {
             });
             return vista;
         }
+        private void video3(){
+            String path = ("android.resource://"+getActivity().getPackageName()) +
+                    "/" + R.raw.lateral;
+            Uri uri = Uri.parse(path);
+            vMiercoles.setVideoURI(uri);
+            MediaController media = new MediaController(getContext());
+            vMiercoles.setMediaController(media);
+            media.setAnchorView(vMiercoles);
+        }
     }
     public static class Fragment4 extends android.support.v4.app.Fragment {
 
@@ -239,6 +282,7 @@ public class Dias extends AppCompatActivity {
         Button mediocre;
         Button torna;
         View vista;
+        VideoView vJueves;
 
 
         private static final String ARG_SECTION_NUMBER = "section_number";
@@ -265,6 +309,8 @@ public class Dias extends AppCompatActivity {
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
+            vJueves = vista.findViewById(R.id.vvJueves);
+            video4();
 
             conseguit.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -291,6 +337,15 @@ public class Dias extends AppCompatActivity {
             });
             return vista;
         }
+        private void video4(){
+            String path = ("android.resource://"+getActivity().getPackageName()) +
+                    "/" + R.raw.flexotension;
+            Uri uri = Uri.parse(path);
+            vJueves.setVideoURI(uri);
+            MediaController media = new MediaController(getContext());
+            vJueves.setMediaController(media);
+            media.setAnchorView(vJueves);
+        }
     }
     public static class Fragment5 extends android.support.v4.app.Fragment {
 
@@ -298,6 +353,7 @@ public class Dias extends AppCompatActivity {
         Button mediocre;
         Button torna;
         View vista;
+        VideoView vViernes;
 
         private static final String ARG_SECTION_NUMBER = "section_number";
 
@@ -323,6 +379,8 @@ public class Dias extends AppCompatActivity {
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
+            vViernes = vista.findViewById(R.id.vvViernes);
+            video5();
 
             conseguit.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -348,6 +406,15 @@ public class Dias extends AppCompatActivity {
                 }
             });
             return vista;
+        }
+        private void video5(){
+            String path = ("android.resource://"+getActivity().getPackageName()) +
+                    "/" + R.raw.pronosupinacion;
+            Uri uri = Uri.parse(path);
+            vViernes.setVideoURI(uri);
+            MediaController media = new MediaController(getContext());
+            vViernes.setMediaController(media);
+            media.setAnchorView(vViernes);
         }
     }
     /**
