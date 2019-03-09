@@ -28,8 +28,6 @@ public class Videos extends AppCompatActivity {
         video4();
         video5();
 
-
-
     }
 
     public void video1(){
