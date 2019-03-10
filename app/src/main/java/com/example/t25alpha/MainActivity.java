@@ -3,6 +3,8 @@ package com.example.t25alpha;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.preference.PreferenceManager;
@@ -16,6 +18,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -58,10 +62,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (LANG_CURRENT.equals("es") || LANG_CURRENT.equals("ca")) {
-                    changeLang(MainActivity.this, "en");
+                    changeLang(getBaseContext(), "en");
+                    updateResources(getBaseContext(), "en");
                 }
-                finish();
+                recreate();
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
+
             }
         });
 
@@ -69,10 +75,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (LANG_CURRENT.equals("es") || LANG_CURRENT.equals("en")) {
-                    changeLang(MainActivity.this, "ca");
+                    changeLang(getBaseContext(), "ca");
+                    updateResources(getBaseContext(), "ca");
                 }
-                finish();
+                recreate();
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
+
             }
         });
 
@@ -81,8 +89,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (LANG_CURRENT.equals("en") || LANG_CURRENT.equals("ca")) {
                     changeLang(MainActivity.this, "es");
+                    updateResources(getBaseContext(), "es");
                 }
-                finish();
+                recreate();
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
         });
@@ -99,9 +108,23 @@ public class MainActivity extends AppCompatActivity {
     protected void attachBaseContext(Context newBase) {
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(newBase);
-        LANG_CURRENT = preferences.getString("Language", "en");
+        LANG_CURRENT = preferences.getString("Language", "ca");
 
         super.attachBaseContext(MyContextWrapper.wrap(newBase, LANG_CURRENT));
+    }
+
+    private static boolean updateResources(Context context, String language) {
+        Locale locale = new Locale(language);
+        Locale.setDefault(locale);
+
+        Resources resources = context.getResources();
+
+        Configuration configuration = resources.getConfiguration();
+        configuration.locale = locale;
+
+        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
+
+        return true;
     }
 
 

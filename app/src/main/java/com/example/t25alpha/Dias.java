@@ -60,7 +60,6 @@ public class Dias extends AppCompatActivity {
      * A placeholder fragment containing a simple view.
      */
 
-
     public static class Fragment extends android.support.v4.app.Fragment {
         Button conseguit;
         Button mediocre;
@@ -132,6 +131,7 @@ public class Dias extends AppCompatActivity {
             vvLunes.setMediaController(media);
             media.setAnchorView(vvLunes);
         }
+
     }
 
     public static class Fragment2 extends android.support.v4.app.Fragment {
@@ -455,15 +455,15 @@ public class Dias extends AppCompatActivity {
         public CharSequence getPageTitle(int position){
             switch (position){
                 case 0:
-                    return "LUNES";
+                    return getString(R.string.lunes);
                 case 1:
-                    return "MARTES";
+                    return getString(R.string.martes);
                 case 2:
-                    return "MIERCOLES";
+                    return getString(R.string.miercoles);
                 case 3:
-                    return "JUEVES";
+                    return getString(R.string.jueves);
                 case 4:
-                    return "VIERNES";
+                    return getString(R.string.viernes);
             }
                 return null;
         }

@@ -25,14 +25,19 @@
     <string name="conseguit">Conseguit!</string>
     <string name="FET">Fet! Pasa al seguent dia</string>
     <string name="mediocre">Mediocre</string>
-    <string name="temp_estimat">Temps estimat: 20m</string>
+    <string name="temp_estimat">Temps estimat: 15m</string>
     <string name="NOFET">Hauras de repetir :(</string>
-    <string name="exercici_dimarts">Per els extensors, col·locarem el palmell de la mà tocant la taula i intentarem despagar-la. Pots fer el mateix exercici amb una pilota per millorar la musculatura.</string>
-    <string name="explicacion_lunes">Amb una pilota de goma col·locada al palmell de la mà, prem la pilota i relaxa. D’aquesta manera es tonificaran els músculs flexors dels dits.</string>
+    <string name="exercici_dimarts">Per els extensors, col·locarem la mà tocant la taula i intentarem despagar el colze cap amunt tot el que puguem per millorar la flexibilitat</string>
+    <string name="explicacion_lunes">Per començar farem contraccions de la mà sense resistència, d aquesta manera agafarem la força necessària per fer els demes exercicis</string>
     <string name="temps_estimat2">Temps estimat: 10m</string>
     <string name="temps_estimat3">Temps estimat: 5m</string>
-    <string name="explicacio_dimecres">Per la flexió del canell farem servir petites peses. Amb el canell a la vorera d’una taula amb una peses i el palmell de la mà mirant al sostre fem repeticions flexionant el canell portant el palmell cap a nosaltres.</string>
-    <string name="exercici_dijous">Per la extensió del canell amb el palmell cap avall i la pesa agafada, elevem el canell sense moure el avantbraç de la taula(gest accelerar moto)</string>
-    <string name="exercici_divendres">Per les desviacions radial i cubital farem servir bandes elàstiques que seran agafades amb les dues mans i tibarem cap a fora estirant la part interna de la banda, provant així com reacciona el canell a la pressió.</string>
+    <string name="explicacio_dimecres">En aquest exercici mourem el canell d esquerra a dreta sobre una taula per millorar la flexibilitat dels extensors i a la vegada agafar força i control sobre la mà</string>
+    <string name="exercici_dijous">Amb la braç en vertical i amb l altre mà aguantant-nos el canell desplaçarem el la mà davant i enrere</string>
+    <string name="exercici_divendres">Amb el braç vertical, en aquest exercici farem nomes un moviment de canell de costat a costat</string>
     <string name="enllaç_web">Prem aqui per mes informacio a la web</string>
+    <string name="lunes">Dilluns</string>
+    <string name="miercoles">Dimecres</string>
+    <string name="jueves">Dijous</string>
+    <string name="martes">Dimarts</string>
+    <string name="viernes">Divendres</string>
 </resources>

@@ -30,6 +30,22 @@ public class Videos extends AppCompatActivity {
 
     }
 
+    protected void onStop() {
+        super.onStop();
+
+        // Media playback takes a lot of resources, so everything should be
+        // stopped and released at this time.
+        releasePlayer();
+    }
+    private void releasePlayer() {
+        video1.stopPlayback();
+        video2.stopPlayback();
+        video3.stopPlayback();
+        video4.stopPlayback();
+        video5.stopPlayback();
+
+    }
+
     public void video1(){
         String path = ("android.resource://" + getPackageName() +
                 "/" + R.raw.potmano);

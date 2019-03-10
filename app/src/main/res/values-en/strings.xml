@@ -23,10 +23,21 @@
     <string name="action_settings">Options</string>
     <string name="conseguit">Done!</string>
     <string name="torna_hi">Repeat exercice!</string>
-    <string name="temp_estimat">Estimed Time: 20m</string>
+    <string name="temp_estimat">Estimed Time: 15m</string>
     <string name="mediocre">Mediocre</string>
     <string name="FET">Done! go to the next day</string>
     <string name="NOFET">You have to repeat the exercice :(</string>
     <string name="temps_estimat2">Estimed Time: 10m</string>
     <string name="temps_estimat3">Estimed Time: 5m</string>
+    <string name="enllaç_web">"Click here to more informaction on the web "</string>
+    <string name="explicacion_lunes">To begin we will make contractions on hand without resistance, in this way we will take the necessary strength for the following exercises</string>
+    <string name="exercici_dimarts">For the extenders, we will place the hand touching the table and try to lift the elbow up as much as we can to improve flexibility</string>
+    <string name="explicacio_dimecres">In this exercise we will move the wrist from left to right on a table to improve the flexibility of the extenders, and at the same time building strength and control over the hand</string>
+    <string name="exercici_dijous">With the arm in vertical and the other holding our wrist we will move the hand forward and back</string>
+    <string name="exercici_divendres">With the arm in vertical, in this exercise we will make a wrist movement side to side.</string>
+    <string name="lunes">Monday</string>
+    <string name="miercoles">"Wednesday  "</string>
+    <string name="martes">"Tuesday "</string>
+    <string name="jueves">Thursday</string>
+    <string name="viernes">Friday</string>
 </resources>

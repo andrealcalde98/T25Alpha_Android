@@ -1,8 +1,11 @@
 package com.example.t25alpha;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,10 +16,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class RestablecerContrasena extends AppCompatActivity {
 private Button btBuscar;
 private EditText etRestablecer;
 private Cursor validacion;
+    private String LANG_CURRENT = "en";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +30,6 @@ private Cursor validacion;
         btBuscar = findViewById(R.id.btnBuscar);
         etRestablecer = findViewById(R.id.eTrestablecerContra);
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

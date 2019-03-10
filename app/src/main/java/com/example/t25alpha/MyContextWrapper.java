@@ -35,6 +35,7 @@ public class MyContextWrapper extends ContextWrapper {
                 context = context.createConfigurationContext(config);
             } else {
                 context.getResources().updateConfiguration(config, context.getResources().getDisplayMetrics());
+
             }
         }
         return new MyContextWrapper(context);
