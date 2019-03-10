@@ -175,14 +175,11 @@ public class Staturday extends AppCompatActivity {
         path=Environment.getExternalStorageDirectory()+
                 File.separator+RUTA_IMAGEN+File.separator+nombreImagen;
 
-        File imagen=new File(path);
-
-        //Intent in = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
-        intent.putExtra("output", Uri.fromFile(imagen));
+        File imagen = new File(path);
+       // intent.putExtra("android.media.action.putExtra", uri);
         startActivityForResult(intent,COD_FOTO);
-
 
 
     }
