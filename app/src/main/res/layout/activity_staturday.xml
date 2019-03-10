@@ -7,6 +7,34 @@
     tools:context=".Staturday"
     android:background="@color/ColorDeFondo">
 
+    <ImageView
+        android:id="@+id/IMG"
+        android:layout_width="237dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/ic_menu_gallery"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/camara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTiempo"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <Button
+        android:id="@+id/camara"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/redondeado"
+        android:onClick="onclick"
+        android:text="Camara"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/idConfirmacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <EditText
         android:id="@+id/etTiempo"
         android:layout_width="386dp"
@@ -20,7 +48,7 @@
         android:inputType="numberDecimal"
         android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMuneca" />
 
@@ -37,7 +65,7 @@
         android:inputType="numberDecimal"
         android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMuneca" />
 
@@ -63,14 +91,14 @@
         android:layout_width="386dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/et_custom"
         android:hint="@string/staturday_peso"
         android:inputType="numberDecimal"
         android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -78,13 +106,13 @@
         android:id="@+id/idConfirmacion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/redondeado"
         android:onClick="onClickDatosSemanales"
         android:text="@string/staturday_confirmar"
         android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etTiempo" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

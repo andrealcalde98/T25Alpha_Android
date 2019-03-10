@@ -39,11 +39,11 @@
     <string name="miercoles">Dimecres</string>
     <string name="jueves">Dijous</string>
     <string name="viernes">Divendres</string>
-    <string name="staturday_peso">Introduce tu peso</string>
-    <string name="staturday_muneca">Introduce el tamaño de tu muñeca</string>
+    <string name="staturday_peso">Introdueix el teu pes</string>
+    <string name="staturday_muneca">Introdueix el tamany del teu canell</string>
     <string name="staturday_cintura">Introduce tamaño cintura</string>
-    <string name="staturday_tiempo">Tiempo que has trabajado durante la Semana</string>
-    <string name="staturday_confirmar">Confirmar datos semanales</string>
+    <string name="staturday_tiempo">Temps que has treballat durant la setmana</string>
+    <string name="staturday_confirmar">Confirmar dades setmanals</string>
     <string name="grafico_peso">Peso(KG)</string>
     <string name="grafico_muneca">Muñeca(CM)</string>
     <string name="usuario_incorrecto">USUARIO I/O CONTRASEÑA INCORRECTOS</string>

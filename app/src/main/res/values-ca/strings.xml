@@ -38,7 +38,7 @@
     <string name="martes">Dimarts</string>
     <string name="viernes">Divendres</string>
     <string name="staturday_peso">Introdueix el teu pes</string>
-    <string name="staturday_muneca">Introdueix el tamany de la teva nina</string>
+    <string name="staturday_muneca">Introdueix el tamany del teu canell</string>
     <string name="staturday_cintura">Introdueix tamany de la cintura</string>
     <string name="staturday_tiempo">Temps que has treballat durant la setmana</string>
     <string name="staturday_confirmar">Confirmar dades setmanals</string>
