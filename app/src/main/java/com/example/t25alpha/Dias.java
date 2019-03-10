@@ -238,7 +238,7 @@ public class Dias extends AppCompatActivity {
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
-            vMiercoles = vista.findViewById(R.id.videoView3);
+            vMiercoles = vista.findViewById(R.id.vvMiercoles);
             video3();
 
             conseguit.setOnClickListener(new View.OnClickListener() {
@@ -309,7 +309,7 @@ public class Dias extends AppCompatActivity {
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
-            vJueves = vista.findViewById(R.id.videoView4);
+            vJueves = vista.findViewById(R.id.vvJueves);
             video4();
 
             conseguit.setOnClickListener(new View.OnClickListener() {
@@ -379,7 +379,7 @@ public class Dias extends AppCompatActivity {
             conseguit = (Button) vista.findViewById(R.id.button_conseguit);
             mediocre = (Button) vista.findViewById(R.id.button_mediocre);
             torna = (Button) vista.findViewById(R.id.button_torna);
-            vViernes = vista.findViewById(R.id.videoView5);
+            vViernes = vista.findViewById(R.id.vvViernes);
             video5();
 
             conseguit.setOnClickListener(new View.OnClickListener() {
