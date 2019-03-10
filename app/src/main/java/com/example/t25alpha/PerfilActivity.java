@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity {
 
-    EditText nomCogmon, correu, sexe, edat, altura, contrasenya;
+    EditText nomCogmon, correu, sexe, edat, altura, contrasenya, edat2;
     TextView web;
     Button edita;
 
@@ -50,7 +50,11 @@ public class PerfilActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"DADES MODIFICADES CORRECTAMENT",Toast.LENGTH_SHORT).show();
             }
         });
+        mostrarPerfil();
+       //editarPerfil();
+    }
 
+    public void mostrarPerfil(){
         String recuperar_variable_usuario = getIntent().getStringExtra("variable_usuario_final");
         nomCogmon.setText(recuperar_variable_usuario);
         String recuperar_variable_correo = getIntent().getStringExtra("variable_correo_final");
@@ -63,7 +67,9 @@ public class PerfilActivity extends AppCompatActivity {
         altura.setText(recuperar_variable_altura);
         String recuperar_variable_password = getIntent().getStringExtra("variable_password_final");
         contrasenya.setText(recuperar_variable_password);
+    }
 
+    public void editarPerfil(){
         String restablecer_usuario = getIntent().getStringExtra("restablecer_usuario");
         nomCogmon.setText(restablecer_usuario);
         String restablecer_correo = getIntent().getStringExtra("restablecer_correo");
@@ -71,11 +77,12 @@ public class PerfilActivity extends AppCompatActivity {
         String restablecer_sexe = getIntent().getStringExtra("restablecer_sexe");
         sexe.setText(restablecer_sexe);
         String restablcer_edad = getIntent().getStringExtra("restablecer_edad");
-        edat.setText(restablcer_edad);
+        edat2.setText(restablcer_edad);
         String restablecer_altura = getIntent().getStringExtra("restablecer_altura");
         altura.setText(restablecer_altura);
         String restablcer_password = getIntent().getStringExtra("restablecer_password");
         contrasenya.setText(restablcer_password);
+
     }
 
 
