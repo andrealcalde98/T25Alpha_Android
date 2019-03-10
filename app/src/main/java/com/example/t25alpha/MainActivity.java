@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             else{
-                Toast.makeText(this, "USUARIO I/O CONTRASEÑA INCORRECTOS", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.usuario_incorrecto, Toast.LENGTH_SHORT).show();
             }
         }
 

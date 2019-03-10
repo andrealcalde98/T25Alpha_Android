@@ -23,12 +23,9 @@
     <string name="action_settings">Opciones</string>
     <string name="conseguit">Conseguido!</string>
     <string name="torna_hi">Repite ejercicio!</string>
-    <string name="temp_estimat">Tiempo estimado: 15m</string>
     <string name="mediocre">Mediocre</string>
     <string name="FET">Hecho! Pasa al dia siguiente</string>
     <string name="NOFET">Tendras que repetir el ejecicio</string>
-    <string name="temps_estimat2">Tiempo estimado: 10m</string>
-    <string name="temps_estimat3">Tiempo estimado: 5m</string>
     <string name="explicacion_lunes">"Para comenzar haremos contracciones de la mano sin resistencia, de esta forma cogeremos la fuerza necesaria para los demás ejercicios  "</string>
     <string name="exercici_dimarts">Para los extensores, colocaremos la mano tocando la mesa e intentaremos despegar el codo hacia arriba todo lo que podamos, para mejorar la flexibilidad</string>
     <string name="explicacio_dimecres">En este ejercicio moveremos la muñeca de izquierda a derecha sobre una mesa para mejorar la flexibilidad de los extensores i a la vez coger fuerza i control sobre la mano</string>
@@ -40,4 +37,12 @@
     <string name="jueves">Jueves</string>
     <string name="martes">Martes</string>
     <string name="viernes">Viernes</string>
+    <string name="staturday_peso">Introduce tu peso</string>
+    <string name="staturday_muneca">Introduce el tamaño de tu muñeca</string>
+    <string name="staturday_cintura">Introduce tamaño cintura</string>
+    <string name="staturday_tiempo">Tiempo que has trabajado durante la Semana</string>
+    <string name="staturday_confirmar">Confirmar datos semanales</string>
+    <string name="grafico_peso">Peso(KG)</string>
+    <string name="grafico_muneca">Muñeca(CM)</string>
+    <string name="usuario_incorrecto">USUARIO I/O CONTRASEÑA INCORRECTOS</string>
 </resources>

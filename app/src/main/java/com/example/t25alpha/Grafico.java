@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class Grafico extends AppCompatActivity {
     private BarChart barChart;
-    private String[] staturday = new String[]{"Peso(KG)", "Muñeca(CM)", "Cintura(CM)", "Tiempo(Horas)"};
+    private String[] staturday = new String[]{"Peso(KG)","Muñeca(CM)", "Cintura(CM)", "Tiempo(Horas)"};
     private int[] colors = new int[]{Color.BLACK, Color.RED, Color.GREEN, Color.BLUE};
 
 

@@ -25,12 +25,9 @@
     <string name="conseguit">Conseguit!</string>
     <string name="FET">Fet! Pasa al seguent dia</string>
     <string name="mediocre">Mediocre</string>
-    <string name="temp_estimat">Temps estimat: 15m</string>
     <string name="NOFET">Hauras de repetir :(</string>
     <string name="exercici_dimarts">Per els extensors, col·locarem la mà tocant la taula i intentarem despagar el colze cap amunt tot el que puguem per millorar la flexibilitat</string>
     <string name="explicacion_lunes">Per començar farem contraccions de la mà sense resistència, d aquesta manera agafarem la força necessària per fer els demes exercicis</string>
-    <string name="temps_estimat2">Temps estimat: 10m</string>
-    <string name="temps_estimat3">Temps estimat: 5m</string>
     <string name="explicacio_dimecres">En aquest exercici mourem el canell d esquerra a dreta sobre una taula per millorar la flexibilitat dels extensors i a la vegada agafar força i control sobre la mà</string>
     <string name="exercici_dijous">Amb la braç en vertical i amb l altre mà aguantant-nos el canell desplaçarem el la mà davant i enrere</string>
     <string name="exercici_divendres">Amb el braç vertical, en aquest exercici farem nomes un moviment de canell de costat a costat</string>
@@ -40,4 +37,12 @@
     <string name="jueves">Dijous</string>
     <string name="martes">Dimarts</string>
     <string name="viernes">Divendres</string>
+    <string name="staturday_peso">Introdueix el teu pes</string>
+    <string name="staturday_muneca">Introdueix el tamany de la teva nina</string>
+    <string name="staturday_cintura">Introdueix tamany de la cintura</string>
+    <string name="staturday_tiempo">Temps que has treballat durant la setmana</string>
+    <string name="staturday_confirmar">Confirmar dades setmanals</string>
+    <string name="grafico_peso">Pes(KG)</string>
+    <string name="grafico_muneca">Muñeca(CM)</string>
+    <string name="usuario_incorrecto">USUARI I/O CONTRASENYA INCORRECTES</string>
 </resources>
