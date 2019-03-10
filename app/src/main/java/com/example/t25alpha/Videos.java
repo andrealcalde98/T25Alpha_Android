@@ -1,6 +1,7 @@
 package com.example.t25alpha;
 
 import android.net.Uri;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,6 +46,26 @@ public class Videos extends AppCompatActivity {
         video5.stopPlayback();
 
     }
+
+    protected void onPause() {
+        super.onPause();
+
+        // In Android versions less than N (7.0, API 24), onPause() is the
+        // end of the visual lifecycle of the app.  Pausing the video here
+        // prevents the sound from continuing to play even after the app
+        // disappears.
+        //
+        // This is not a problem for more recent versions of Android because
+        // onStop() is now the end of the visual lifecycle, and that is where
+        // most of the app teardown should take place.
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+            video1.pause();
+            video2.pause();
+            video3.pause();
+            video4.pause();
+            video5.pause();
+
+        }}
 
     public void video1(){
         String path = ("android.resource://" + getPackageName() +
