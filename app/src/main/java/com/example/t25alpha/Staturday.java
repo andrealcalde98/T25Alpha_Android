@@ -180,7 +180,7 @@ public class Staturday extends AppCompatActivity {
         //Intent in = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
-        intent.putExtra("android.media.action.putExtra", Uri.fromFile(imagen));
+        intent.putExtra("output", Uri.fromFile(imagen));
         startActivityForResult(intent,COD_FOTO);
 
 
