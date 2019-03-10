@@ -9,11 +9,10 @@
 
     <ImageView
         android:id="@+id/IMG"
-        android:layout_width="237dp"
-        android:layout_height="197dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:drawable/ic_menu_gallery"
         android:contentDescription="TODO"
         app:layout_constraintBottom_toTopOf="@+id/camara"
         app:layout_constraintEnd_toEndOf="parent"

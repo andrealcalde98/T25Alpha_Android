@@ -24,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.net.URI;
 
 import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
@@ -72,7 +73,7 @@ public class Staturday extends AppCompatActivity {
 
         if((shouldShowRequestPermissionRationale(CAMERA)) ||
                 (shouldShowRequestPermissionRationale(WRITE_EXTERNAL_STORAGE))){
-            cargarDialogoRecomendacion();
+             cargarDialogoRecomendacion();
         }else{
             requestPermissions(new String[]{WRITE_EXTERNAL_STORAGE,CAMERA},100);
         }
@@ -94,7 +95,7 @@ public class Staturday extends AppCompatActivity {
 
     }
 
-    private void solicitarPermisosManual() {
+     private void solicitarPermisosManual() {
         final CharSequence[] opciones={"si","no"};
         final AlertDialog.Builder alertOpciones=new AlertDialog.Builder(Staturday.this);
         alertOpciones.setTitle("¿Desea configurar los permisos de forma manual?");
@@ -176,21 +177,14 @@ public class Staturday extends AppCompatActivity {
 
         File imagen=new File(path);
 
-        Intent intent=null;
-        intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        ////
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.N)
-        {
-            String authorities=getApplicationContext().getPackageName()+".provider";
-            Uri imageUri= FileProvider.getUriForFile(this,authorities,imagen);
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
-        }else
-        {
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imagen));
-        }
+        //Intent in = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+        Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+        intent.putExtra("android.media.action.putExtra", Uri.fromFile(imagen));
         startActivityForResult(intent,COD_FOTO);
 
-        ////
+
+
     }
 
     @Override
