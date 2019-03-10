@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity {
 
-    EditText nomCogmon, correu, sexe, edat, altura, contrasenya;
+    EditText nomCogmon, correu, sexe, edat, altura, contrasenya, edat2;
     TextView web;
     Button edita;
 
@@ -51,7 +51,7 @@ public class PerfilActivity extends AppCompatActivity {
             }
         });
         mostrarPerfil();
-      // editarPerfil();
+       //editarPerfil();
     }
 
     public void mostrarPerfil(){
@@ -77,7 +77,7 @@ public class PerfilActivity extends AppCompatActivity {
         String restablecer_sexe = getIntent().getStringExtra("restablecer_sexe");
         sexe.setText(restablecer_sexe);
         String restablcer_edad = getIntent().getStringExtra("restablecer_edad");
-        edat.setText(restablcer_edad);
+        edat2.setText(restablcer_edad);
         String restablecer_altura = getIntent().getStringExtra("restablecer_altura");
         altura.setText(restablecer_altura);
         String restablcer_password = getIntent().getStringExtra("restablecer_password");
