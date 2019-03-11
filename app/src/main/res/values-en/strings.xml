@@ -38,7 +38,7 @@
     <string name="jueves">Thursday</string>
     <string name="viernes">Friday</string>
     <string name="staturday_peso">Enter your weight</string>
-    <string name="staturday_muneca">Introdueix el teu pes</string>
+    <string name="staturday_muneca">Enter the size of your doll</string>
     <string name="staturday_cintura">Enter the size of your waist</string>
     <string name="staturday_tiempo">Time worked during the week</string>
     <string name="staturday_confirmar">Confirm weekly data</string>

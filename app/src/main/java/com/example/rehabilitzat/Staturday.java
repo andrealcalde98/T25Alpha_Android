@@ -12,6 +12,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -181,7 +182,7 @@ public class Staturday extends AppCompatActivity {
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.N)
         {
             String authorities=getApplicationContext().getPackageName()+".provider";
-            Uri imageUri=FileProvider.getUriForFile(this,authorities,imagen);
+            Uri imageUri= FileProvider.getUriForFile(this,authorities,imagen);
             intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
         }else
         {
