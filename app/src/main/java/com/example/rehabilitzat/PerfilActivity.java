@@ -51,7 +51,7 @@ public class PerfilActivity extends AppCompatActivity {
             }
         });
         mostrarPerfil();
-       //editarPerfil();
+
     }
 
     public void mostrarPerfil(){
@@ -69,7 +69,7 @@ public class PerfilActivity extends AppCompatActivity {
         contrasenya.setText(recuperar_variable_password);
     }
 
-    public void editarPerfil(){
+    /*public void editarPerfil(){
         String restablecer_usuario = getIntent().getStringExtra("restablecer_usuario");
         nomCogmon.setText(restablecer_usuario);
         String restablecer_correo = getIntent().getStringExtra("restablecer_correo");
@@ -77,16 +77,12 @@ public class PerfilActivity extends AppCompatActivity {
         String restablecer_sexe = getIntent().getStringExtra("restablecer_sexe");
         sexe.setText(restablecer_sexe);
         String restablcer_edad = getIntent().getStringExtra("restablecer_edad");
-        edat2.setText(restablcer_edad);
+        edat.setText(restablcer_edad);
         String restablecer_altura = getIntent().getStringExtra("restablecer_altura");
         altura.setText(restablecer_altura);
         String restablcer_password = getIntent().getStringExtra("restablecer_password");
         contrasenya.setText(restablcer_password);
 
     }
-
-
-
-
-
+    */
 }

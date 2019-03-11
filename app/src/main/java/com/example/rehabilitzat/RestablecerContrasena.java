@@ -56,7 +56,7 @@ private Cursor validacion;
         SQLiteDatabase db=bdprojecte.getWritableDatabase();
         String restablecer = etRestablecer.getText().toString();
         validacion=db.rawQuery("SELECT usuario,password,correo,sexe,edad,altura FROM USUARIOS WHERE CORREO='"+restablecer+"'",null);
-        if(validacion.moveToFirst()) {
+        if(validacion.moveToLast()) {
             String usua = validacion.getString(0);
             String pass = validacion.getString(1);
             String corr = validacion.getString(2);
@@ -66,12 +66,12 @@ private Cursor validacion;
             if(restablecer.equals(corr)){
 
                 Intent intent = new Intent(this, PerfilActivity.class);
-                intent.putExtra("restablecer_usuario",usua);
-                intent.putExtra("restablecer_password",pass);
-                intent.putExtra("restablecer_correo",corr);
-                intent.putExtra("restablecer_sexe",sex);
-                intent.putExtra("restablecer_edad",eda);
-                intent.putExtra("restablecer_altura",altu);
+                intent.putExtra("variable_usuario_final",usua);
+                intent.putExtra("variable_password_final",pass);
+                intent.putExtra("variable_correo_final",corr);
+                intent.putExtra("variable_sexe_final",sex);
+                intent.putExtra("variable_edad_final",eda);
+                intent.putExtra("variable_altura_final",altu);
                 startActivity(intent);
 
                 etRestablecer.setText("");
