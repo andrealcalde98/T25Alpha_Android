@@ -1,18 +1,26 @@
-package com.example.rehabilitzat;
+package com.example.t25alpha;
 
+import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -124,6 +132,31 @@ public class Dias extends AppCompatActivity {
             vvLunes.setMediaController(media);
             media.setAnchorView(vvLunes);
         }
+        private void releasePlayer1() {
+            vvLunes.stopPlayback();}
+
+        public void onStop() {
+            super.onStop();
+
+            // Media playback takes a lot of resources, so everything should be
+            // stopped and released at this time.
+            releasePlayer1();
+        }
+
+        public void onPause() {
+            super.onPause();
+
+            // In Android versions less than N (7.0, API 24), onPause() is the
+            // end of the visual lifecycle of the app.  Pausing the video here
+            // prevents the sound from continuing to play even after the app
+            // disappears.
+            //
+            // This is not a problem for more recent versions of Android because
+            // onStop() is now the end of the visual lifecycle, and that is where
+            // most of the app teardown should take place.
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+                vvLunes.pause();
+            }}
 
     }
 
@@ -196,7 +229,32 @@ public class Dias extends AppCompatActivity {
             vMartes.setMediaController(media);
             media.setAnchorView(vMartes);
         }
+        private void releasePlayer2() {
+            vMartes.stopPlayback();}
+        public void onStop() {
+            super.onStop();
+
+            // Media playback takes a lot of resources, so everything should be
+            // stopped and released at this time.
+            releasePlayer2();
+        }
+
+        public void onPause() {
+            super.onPause();
+
+            // In Android versions less than N (7.0, API 24), onPause() is the
+            // end of the visual lifecycle of the app.  Pausing the video here
+            // prevents the sound from continuing to play even after the app
+            // disappears.
+            //
+            // This is not a problem for more recent versions of Android because
+            // onStop() is now the end of the visual lifecycle, and that is where
+            // most of the app teardown should take place.
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+                vMartes.pause();
+            }}
     }
+
 
     public static class Fragment3 extends android.support.v4.app.Fragment {
 
@@ -268,6 +326,30 @@ public class Dias extends AppCompatActivity {
             vMiercoles.setMediaController(media);
             media.setAnchorView(vMiercoles);
         }
+        private void releasePlayer3() {
+            vMiercoles.stopPlayback();}
+        public void onStop() {
+            super.onStop();
+
+            // Media playback takes a lot of resources, so everything should be
+            // stopped and released at this time.
+            releasePlayer3();
+        }
+
+        public void onPause() {
+            super.onPause();
+
+            // In Android versions less than N (7.0, API 24), onPause() is the
+            // end of the visual lifecycle of the app.  Pausing the video here
+            // prevents the sound from continuing to play even after the app
+            // disappears.
+            //
+            // This is not a problem for more recent versions of Android because
+            // onStop() is now the end of the visual lifecycle, and that is where
+            // most of the app teardown should take place.
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+                vMiercoles.pause();
+            }}
     }
     public static class Fragment4 extends android.support.v4.app.Fragment {
 
@@ -339,6 +421,30 @@ public class Dias extends AppCompatActivity {
             vJueves.setMediaController(media);
             media.setAnchorView(vJueves);
         }
+        private void releasePlayer4() {
+            vJueves.stopPlayback();}
+        public void onStop() {
+            super.onStop();
+
+            // Media playback takes a lot of resources, so everything should be
+            // stopped and released at this time.
+            releasePlayer4();
+        }
+
+        public void onPause() {
+            super.onPause();
+
+            // In Android versions less than N (7.0, API 24), onPause() is the
+            // end of the visual lifecycle of the app.  Pausing the video here
+            // prevents the sound from continuing to play even after the app
+            // disappears.
+            //
+            // This is not a problem for more recent versions of Android because
+            // onStop() is now the end of the visual lifecycle, and that is where
+            // most of the app teardown should take place.
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+                vJueves.pause();
+            }}
     }
     public static class Fragment5 extends android.support.v4.app.Fragment {
 
@@ -409,6 +515,30 @@ public class Dias extends AppCompatActivity {
             vViernes.setMediaController(media);
             media.setAnchorView(vViernes);
         }
+        private void releasePlayer5() {
+            vViernes.stopPlayback();}
+        public void onStop() {
+            super.onStop();
+
+            // Media playback takes a lot of resources, so everything should be
+            // stopped and released at this time.
+            releasePlayer5();
+        }
+
+        public void onPause() {
+            super.onPause();
+
+            // In Android versions less than N (7.0, API 24), onPause() is the
+            // end of the visual lifecycle of the app.  Pausing the video here
+            // prevents the sound from continuing to play even after the app
+            // disappears.
+            //
+            // This is not a problem for more recent versions of Android because
+            // onStop() is now the end of the visual lifecycle, and that is where
+            // most of the app teardown should take place.
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+                vViernes.pause();
+            }}
     }
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to

@@ -123,7 +123,9 @@ public class Staturday extends AppCompatActivity {
         diag.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                requestPermissions(new String[]{WRITE_EXTERNAL_STORAGE,CAMERA},100);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    requestPermissions(new String[]{WRITE_EXTERNAL_STORAGE,CAMERA},100);
+                }
             }
         });
         diag.show();
@@ -135,19 +137,19 @@ public class Staturday extends AppCompatActivity {
 
     private void cargarImagen() {
 
-        final CharSequence[] opciones={"Tomar Foto","Cargar Imagen","Cancelar"};
+        final CharSequence[] opciones={getString(R.string.tomarfoto),getString(R.string.carregaIMG),getString(R.string.surt)};
         final AlertDialog.Builder alertOpciones=new AlertDialog.Builder(Staturday.this);
-        alertOpciones.setTitle("Seleccione una Opción");
+        alertOpciones.setTitle(getString(R.string.escogeOpcion));
         alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                if (opciones[i].equals("Tomar Foto")){
+                if (opciones[i].equals("Fer Foto") || opciones[i].equals("Hacer Foto") || opciones[i].equals("Take Photo")){
                     tomarFotografia();
                 }else{
-                    if (opciones[i].equals("Cargar Imagen")){
+                    if (opciones[i].equals("Carrega Imatge") || opciones[i].equals("Sube Foto") || opciones[i].equals("Add Photo")){
                         Intent intent=new Intent(Intent.ACTION_GET_CONTENT, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                        intent.setType("image/");
-                        startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),COD_SELECCIONA);
+                        //intent.setType("image/");
+                        startActivityForResult(intent.createChooser(intent,":)"),COD_SELECCIONA);
                     }else{
                         dialogInterface.dismiss();
                     }
@@ -172,15 +174,20 @@ public class Staturday extends AppCompatActivity {
 
         path=Environment.getExternalStorageDirectory()+
                 File.separator+RUTA_IMAGEN+File.separator+nombreImagen;
+        File imagen = new File(path);
 
-        File imagen=new File(path);
-
-        //Intent in = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
-        intent.putExtra("android.media.action.putExtra", Uri.fromFile(imagen));
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.N)
+        {
+            String authorities=getApplicationContext().getPackageName()+".provider";
+            Uri imageUri=FileProvider.getUriForFile(this,authorities,imagen);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+        }else
+        {
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imagen));
+        }
         startActivityForResult(intent,COD_FOTO);
-
 
 
     }
@@ -188,6 +195,7 @@ public class Staturday extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
         if (resultCode==RESULT_OK){
 
             switch (requestCode){
@@ -201,18 +209,19 @@ public class Staturday extends AppCompatActivity {
                             new MediaScannerConnection.OnScanCompletedListener() {
                                 @Override
                                 public void onScanCompleted(String path, Uri uri) {
-                                    Log.i("Ruta de almacenamiento","Path: "+path);
+                                    Log.i("R","Path: "+path);
                                 }
                             });
 
-                    Bitmap bitmap= BitmapFactory.decodeFile(path);
-                    imagen.setImageBitmap(bitmap);
+                Bitmap bitmap= BitmapFactory.decodeFile(path);
 
+                //Bitmap bitmap = (Bitmap)data.getExtras().get("data");
+                imagen.setImageBitmap(bitmap);
                     break;
             }
 
 
-        }
+       }
     }
 
     public void onClickDatosSemanales(View view) {
