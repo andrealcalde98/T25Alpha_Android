@@ -47,6 +47,10 @@
     <string name="grafico_peso">Peso(KG)</string>
     <string name="grafico_muneca">Muñeca(CM)</string>
     <string name="usuario_incorrecto">USUARIO I/O CONTRASEÑA INCORRECTOS</string>
+    <string name="tomarfoto">Fer Foto</string>
+    <string name="carregaIMG">Carrega Imatge</string>
+    <string name="surt">Surt</string>
+    <string name="escogeOpcion">Tria opcio</string>
 
 
 </resources>
