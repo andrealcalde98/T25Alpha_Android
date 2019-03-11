@@ -1,4 +1,4 @@
-package com.example.rehabilitzat;
+package com.example.rehabilitat;
 
 public class Semanas {
         private int imagen;

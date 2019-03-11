@@ -1,4 +1,4 @@
-package com.example.rehabilitzat;
+package com.example.rehabilitat;
 
 import org.junit.Test;
 

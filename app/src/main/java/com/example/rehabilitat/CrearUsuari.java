@@ -1,4 +1,4 @@
-package com.example.rehabilitzat;
+package com.example.rehabilitat;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package com.example.rehabilitzat;
+package com.example.rehabilitat;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.example.rehabilitzat;
+package com.example.rehabilitat;
 
 public class BDModelo {
     private String usuario,sexe,edad,altura, correo,password;
