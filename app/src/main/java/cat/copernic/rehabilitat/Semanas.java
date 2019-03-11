@@ -1,4 +1,4 @@
-package com.example.rehabilitat;
+package cat.copernic.rehabilitat;
 
 public class Semanas {
         private int imagen;

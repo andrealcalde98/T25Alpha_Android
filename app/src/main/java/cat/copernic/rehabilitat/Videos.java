@@ -1,4 +1,4 @@
-package com.example.rehabilitat;
+package cat.copernic.rehabilitat;
 
 import android.net.Uri;
 import android.os.Build;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
 
 public class Videos extends AppCompatActivity {
     VideoView video1, video2, video3, video4, video5;

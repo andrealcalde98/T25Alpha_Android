@@ -1,4 +1,4 @@
-package com.example.rehabilitat;
+package cat.copernic.rehabilitat;
 
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;

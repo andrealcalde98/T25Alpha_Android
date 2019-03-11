@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/ColorDeFondo"
     app:layout_behavior=""
-    tools:context=".menuPrincipal">
+    tools:context="cat.copernic.rehabilitat.menuPrincipal">
 
     <Button
         android:id="@+id/button4"

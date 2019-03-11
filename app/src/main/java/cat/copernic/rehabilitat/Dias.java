@@ -1,4 +1,4 @@
-package com.example.rehabilitat;
+package cat.copernic.rehabilitat;
 
 import android.net.Uri;
 import android.os.Build;
@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
+
 
 public class Dias extends AppCompatActivity {
 

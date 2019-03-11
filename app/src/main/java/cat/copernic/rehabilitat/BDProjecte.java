@@ -1,4 +1,4 @@
-package com.example.rehabilitat;
+package cat.copernic.rehabilitat;
 
 import android.content.Context;
 import android.database.Cursor;

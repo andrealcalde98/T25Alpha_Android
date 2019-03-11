@@ -1,9 +1,10 @@
-package com.example.rehabilitat;
+package cat.copernic.rehabilitat;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
 
 public class menuPrincipal extends AppCompatActivity {
 

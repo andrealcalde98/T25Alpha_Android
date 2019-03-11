@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.rehabilitat">
+    package="cat.copernic.rehabilitat">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -31,38 +31,38 @@
         </provider>
 
         <activity
-            android:name="com.example.rehabilitat.Videos"
+            android:name="cat.copernic.rehabilitat.Videos"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="com.example.rehabilitat.Grafico"
+            android:name="cat.copernic.rehabilitat.Grafico"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.rehabilitat.Staturday"
+            android:name="cat.copernic.rehabilitat.Staturday"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.rehabilitat.Dias"
+            android:name="cat.copernic.rehabilitat.Dias"
             android:label="@string/title_activity_dias"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.rehabilitat.PerfilActivity"
+            android:name="cat.copernic.rehabilitat.PerfilActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.rehabilitat.menuPrincipal"
+            android:name="cat.copernic.rehabilitat.menuPrincipal"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.rehabilitat.RestablecerContrasena"
+            android:name="cat.copernic.rehabilitat.RestablecerContrasena"
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
-            android:name="com.example.rehabilitat.CrearUsuari"
+            android:name="cat.copernic.rehabilitat.CrearUsuari"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.rehabilitat.Main_semanas"
+            android:name="cat.copernic.rehabilitat.Main_semanas"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.rehabilitat.BDMain"
+            android:name="cat.copernic.rehabilitat.BDMain"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.rehabilitat.MainActivity"
+            android:name="cat.copernic.rehabilitat.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

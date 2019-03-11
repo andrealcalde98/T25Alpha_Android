@@ -1,4 +1,4 @@
-package com.example.rehabilitat;
+package cat.copernic.rehabilitat;
 
 import android.annotation.TargetApi;
 import android.content.Context;

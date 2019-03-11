@@ -1,4 +1,4 @@
-package com.example.rehabilitat;
+package cat.copernic.rehabilitat;
 
 public class BDModelo {
     private String usuario,sexe,edad,altura, correo,password;

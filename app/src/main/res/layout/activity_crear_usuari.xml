@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ColorDeFondo"
-    tools:context=".CrearUsuari">
+    tools:context="cat.copernic.rehabilitat.CrearUsuari">
 
     <EditText
         android:id="@+id/etContrasena2"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ColorDeFondo"
-    tools:context=".Videos">
+    tools:context="cat.copernic.rehabilitat.Videos">
 
     <ScrollView
         android:layout_width="match_parent"

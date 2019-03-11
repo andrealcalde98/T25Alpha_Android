@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ColorDeFondo"
-    tools:context=".RestablecerContrasena">
+    tools:context="cat.copernic.rehabilitat.RestablecerContrasena">
 
     <TextView
         android:id="@+id/txtTitle"
