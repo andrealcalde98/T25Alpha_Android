@@ -1,4 +1,4 @@
-package com.example.t25alpha;
+package com.example.rehabilitzat;
 
 import org.junit.Test;
 

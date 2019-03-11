@@ -1,4 +1,4 @@
-package com.example.t25alpha;
+package com.example.rehabilitzat;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

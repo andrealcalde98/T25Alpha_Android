@@ -1,19 +1,15 @@
-package com.example.t25alpha;
+package com.example.rehabilitzat;
 
 import android.content.Context;
 import android.content.Intent;
-import android.icu.util.ValueIterator;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.zip.CheckedOutputStream;
 
 public class adaptadorSemanas extends RecyclerView.Adapter<adaptadorSemanas.ViewHolderDatos> {
     private ArrayList<Semanas> items;

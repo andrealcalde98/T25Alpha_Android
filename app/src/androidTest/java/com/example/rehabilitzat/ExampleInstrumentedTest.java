@@ -1,4 +1,4 @@
-package com.example.t25alpha;
+package com.example.rehabilitzat;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.t25alpha", appContext.getPackageName());
+        assertEquals("com.example.rehabilitzat", appContext.getPackageName());
     }
 }

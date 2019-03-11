@@ -1,4 +1,4 @@
-package com.example.t25alpha;
+package com.example.rehabilitzat;
 
 import android.content.Context;
 import android.database.Cursor;

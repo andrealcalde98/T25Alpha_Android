@@ -1,4 +1,4 @@
-package com.example.t25alpha;
+package com.example.rehabilitzat;
 
 import android.content.Context;
 import android.content.Intent;
@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
     private String LANG_CURRENT = "en";
     private EditText etUsuario;
     private EditText etPassword;
-    private Button btMostrar;
-    private Button btAgregar;
     private Cursor validacion;
     private ImageView logo;
 
@@ -42,21 +40,11 @@ public class MainActivity extends AppCompatActivity {
         btnUsuario = (Button) findViewById(R.id.btnCrearUsuario);
         btnIniSesion = (Button) findViewById(R.id.btnIniciarSesion);
         olvidarPass = (TextView) findViewById(R.id.txtOlvidarCuenta);
-        btMostrar = (Button) findViewById(R.id.btnMostrar);
         etUsuario = findViewById(R.id.eTUsername);
         etPassword = findViewById(R.id.eTPassword);
-        btAgregar = findViewById(R.id.btnMostrar);
         logo = (ImageView) findViewById(R.id.image_logo);
 
         rotacion();
-
-        btMostrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), BDMain.class);
-                startActivity(intent);
-            }
-        });
 
         findViewById(R.id.btn_english).setOnClickListener(new View.OnClickListener() {
             @Override

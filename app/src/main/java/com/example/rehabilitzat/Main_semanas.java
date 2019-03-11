@@ -1,13 +1,10 @@
-package com.example.t25alpha;
+package com.example.rehabilitzat;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import com.example.t25alpha.R;
-import com.example.t25alpha.Semanas;
+import com.example.rehabilitzat.R;
 
 import java.util.ArrayList;
 

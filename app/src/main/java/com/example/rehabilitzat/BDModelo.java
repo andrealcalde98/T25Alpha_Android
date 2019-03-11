@@ -1,4 +1,4 @@
-package com.example.t25alpha;
+package com.example.rehabilitzat;
 
 public class BDModelo {
     private String usuario,sexe,edad,altura, correo,password;
