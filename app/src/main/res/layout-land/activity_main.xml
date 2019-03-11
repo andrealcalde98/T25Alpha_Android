@@ -22,7 +22,7 @@
         android:maxLength="20"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgT25"
+        app:layout_constraintStart_toEndOf="@+id/image_logo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -41,7 +41,7 @@
         android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgT25"
+        app:layout_constraintStart_toEndOf="@+id/image_logo"
         app:layout_constraintTop_toBottomOf="@+id/eTUsername"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -82,7 +82,7 @@
         app:layout_constraintVertical_bias="0.711" />
 
     <ImageView
-        android:id="@+id/imgT25"
+        android:id="@+id/image_logo"
         android:layout_width="342dp"
         android:layout_height="214dp"
         android:layout_marginStart="40dp"

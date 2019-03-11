@@ -44,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
         etUsuario = findViewById(R.id.eTUsername);
         etPassword = findViewById(R.id.eTPassword);
         logo = (ImageView) findViewById(R.id.image_logo);
-
-        rotacion();
+        //rotacion();
 
         findViewById(R.id.btn_english).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 String eda = validacion.getString(4);
                 String altu = validacion.getString(5);
                 if(usuario.equals(usua)&&password.equals(pass)){
-
+                    rotacion();
                     Intent intent = new Intent(this, menuPrincipal.class);
                     intent.putExtra("variable_usuario",usua);
                     intent.putExtra("variable_password",pass);
